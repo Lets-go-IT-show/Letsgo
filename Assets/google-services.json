@@ -2,6 +2,7 @@
   "project_info": {
     "project_number": "633485436926",
     "project_id": "letsgotest-667fc",
+    "firebase_url": "https://letsgo-a2b88-default-rtdb.firebaseio.com/",
     "storage_bucket": "letsgotest-667fc.appspot.com"
   },
   "client": [
