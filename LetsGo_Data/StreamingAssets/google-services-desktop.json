@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "633485436926",
+    "project_id": "letsgotest-667fc",
+    "firebase_url": "https://letsgo-a2b88-default-rtdb.firebaseio.com/",
+    "storage_bucket": "letsgotest-667fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633485436926:android:0c0549fe705dad8337c2af",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.letsgotest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633485436926-2dt21gmm33t8kcjlj6lt3pd6idu9qq5b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5s43mG-WmtpXmD_MG9CdEbFCKcjBD6-M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633485436926-2dt21gmm33t8kcjlj6lt3pd6idu9qq5b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
