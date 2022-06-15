@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Ardunity;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,6 +10,8 @@ public class PlayerController : MonoBehaviour
 
     TimingManager theTimingManager;
     private bool pauseOn = false;
+
+    public AnalogInput input;
 
     void Start()
     {
@@ -26,6 +29,11 @@ public class PlayerController : MonoBehaviour
                 // 판정 체크
                 theTimingManager.CheckTiming();
             }
+        }
+
+        if(input.Value >= 1)
+        {
+            theTimingManager.CheckTiming();
         }
 
         if(s_canPresskey)
