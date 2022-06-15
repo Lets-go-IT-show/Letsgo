@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public static bool s_canPresskey = true;
 
     TimingManager theTimingManager;
+    private bool pauseOn = false;
 
     void Start()
     {
@@ -24,6 +25,26 @@ public class PlayerController : MonoBehaviour
             {
                 // 판정 체크
                 theTimingManager.CheckTiming();
+            }
+        }
+
+        if(s_canPresskey)
+        {
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (!pauseOn)
+                {
+                    Time.timeScale = 0;
+                    AudioManager.instance.StopBGM();
+                }
+                    
+                else
+                {
+                    Time.timeScale = 1.0f;
+                    AudioManager.instance.StopBGM();
+                }
+                    
+                pauseOn = !pauseOn;
             }
         }
 
