@@ -6,10 +6,24 @@ using UnityEngine;
 using Firebase;
 using Firebase.Database;
 using Firebase.Unity.Editor;
-// Firebase 불러오기
+using UnityEngine.UI;
 
-public class SelectScore : MonoBehaviour
+public class TextCtrl : MonoBehaviour
 {
+    private int Score = 0;
+    public Text ScoreText1 = null;
+
+    /*void Update()
+    {
+        ScoreText.text = "누른 횟수 : " + Score.ToString();
+    }
+
+    private void FixedUpdate()
+    {
+        if (Input.GetButtonDown("Fire1")) Score++; // Fire1 = 좌클릭, Fire2 = 우클릭
+    }*/
+
+
     class Rank : IComparable
     {
         public static List<Rank> ranks = new List<Rank>();
@@ -28,6 +42,7 @@ public class SelectScore : MonoBehaviour
             Rank r = (Rank)obj;
             //Debug.Log(this.score + " vs. " + r.score + " = " + this.score.CompareTo(r.score));
             return -1 * this.score.CompareTo(r.score);
+            // return this.score.CompareTo(r.score);
         }
     }
 
@@ -36,7 +51,7 @@ public class SelectScore : MonoBehaviour
     void Start()
     {
         FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://letsgo-a2b88-default-rtdb.firebaseio.com/");
-            
+
         reference = FirebaseDatabase.DefaultInstance.GetReference("rank");
 
         reference.GetValueAsync().ContinueWith(task => {
@@ -56,10 +71,27 @@ public class SelectScore : MonoBehaviour
 
                 Rank.ranks.Sort();
 
+
+                int cnt = 0;
+
                 foreach (var item in Rank.ranks)
                 {
+
+                    if (cnt > 6) { break; }
+
+                    else
+                    {
+                        ScoreText1.text += item.name + "    " + item.score + "점\n";
+                        cnt++;
+                    }
+
                     Debug.Log(item.name + " " + item.score);
+
+                    // ScoreText1.text += item.name + "          " + item.score+"점\n";
+
+
                 }
+
             }
         });
 
