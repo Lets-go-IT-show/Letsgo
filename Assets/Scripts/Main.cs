@@ -53,5 +53,9 @@ public class Main : MonoBehaviour
         SceneManager.LoadScene("Role_2");
     }
 
+    public void Menu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 
 }
