@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CenterFlame : MonoBehaviour
 {
+    AudioSource myAudio;
     // 첫 번째 노트만 지정
     bool musicStart = false;
 
@@ -13,6 +14,7 @@ public class CenterFlame : MonoBehaviour
 
     private void Start()
     {
+        myAudio = GetComponent<AudioSource>();
         theNote = FindObjectOfType<NoteManager>();
         theResult = FindObjectOfType<Result>();
     }
@@ -24,18 +26,20 @@ public class CenterFlame : MonoBehaviour
             // 닿은 콜라이더가 Note라면 실행
             if (collision.CompareTag("Note"))
             {
-                AudioManager.instance.PlayBGM("BGM0");
+                myAudio.Play();
                 musicStart = true;
             }
         }
 
         // 음악이 끝나면 모든 노트 없애기
-      if (AudioManager.instance.bgmPlayer.isPlaying== false)
+        if (myAudio.isPlaying == false)
         {
             theNote.RemoveNote();
             // 결과창 띄우기
             theResult.ShowResult();
             // 끝나는 지점 노래 추가
-        } 
+        }
+
+
     }
 }

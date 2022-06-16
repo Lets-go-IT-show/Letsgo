@@ -3,13 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-using Firebase;
-using Firebase.Database;
-using Firebase.Unity.Editor;
 public class Result : MonoBehaviour
 {
-
-
     // 결과창 변수
     [SerializeField] GameObject goUI = null;
 
@@ -23,32 +18,13 @@ public class Result : MonoBehaviour
     // 판정의 대한 기록
     TimingManager theTiming;
 
-    // 이름 가져오는 클래스
-    // UserName theName = new UserName();
-
-
-    class Rank
-    {
-        public string name;
-        public int score;
-
-        public Rank(string name, int score)
-        {
-            // 초기화하기 쉽게 생성자 사용
-            this.name = name;
-            this.score = score;
-        }
-    }
-
-    public DatabaseReference reference { get; set; }
 
     // Start is called before the first frame update
-    public void Start()
+    void Start()
     {
         theScore = FindObjectOfType<ScoreManager>();
         theCombo = FindObjectOfType<ComboManager>();
         theTiming = FindObjectOfType<TimingManager>();
-        // theName = FindObjectOfType<UserName>();
     }
 
     public void ShowResult()
@@ -64,25 +40,6 @@ public class Result : MonoBehaviour
         txtMaxCombo.text = "0";
 
         int[] t_judgement = theTiming.GetJudgementRecord();
-        // 콘솔로 점수 찍히는 지 확인
-        Debug.Log("콘솔로 점수 넘어오는 지 확인 : " + theScore.GetCurrentScore());
-
-        // firebase로 점수 넘김
-        FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://letsgo-a2b88-default-rtdb.firebaseio.com/");
-        reference = FirebaseDatabase.DefaultInstance.RootReference;
-
-
-        // Debug.Log("usrename넘어오는지 확인 : " + UserName.username);
-        UserName theName = new UserName();
-        Debug.Log("구오이 점수 콘솔 : " + theScore.GetCurrentScore());
-        Rank rank = new Rank(UserName.username, theScore.GetCurrentScore());
-        string json = JsonUtility.ToJson(rank);
-
-        string key = reference.Child("rank").Push().Key;
-        reference.Child("rank").Child(key).SetRawJsonValueAsync(json);
-
-
-
         int t_currentScore = theScore.GetCurrentScore();
         int t_maxCombo = theCombo.GetMaxCombo();
 

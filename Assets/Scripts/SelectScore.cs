@@ -36,7 +36,7 @@ public class SelectScore : MonoBehaviour
     void Start()
     {
         FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://letsgo-a2b88-default-rtdb.firebaseio.com/");
-            
+
         reference = FirebaseDatabase.DefaultInstance.GetReference("rank");
 
         reference.GetValueAsync().ContinueWith(task => {
