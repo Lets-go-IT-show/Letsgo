@@ -10,6 +10,7 @@ public class NoteManager : MonoBehaviour
     // 노트 생성을 위한 시간을 체크할 변수
     // 오차가 적은 double 사용
     double currentTime = 0d;
+    double time = 0d;
 
     // note 생성 막기
     bool noteActive = true;
@@ -33,26 +34,206 @@ public class NoteManager : MonoBehaviour
     {
         if (noteActive)
         {
+            // 시간 계산
+            time += Time.deltaTime;
             // 1초의 1씩 증가
             currentTime += Time.deltaTime;
 
             // 비트 한 개당 등장 속도
             // 0.5초당 비트 출연
-            if (currentTime >= 60d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+            if (time <= 8d)
             {
-                // 공유자원으로 설정된 ObjectPool의 instance를 참조하여 noteQueue에 접근 
-                // Dequeue키워드로 queue에 담긴 객체를 빼내온다
-                GameObject t_note = ObjectPool.instance.noteQueue.Dequeue();
+                if (currentTime >= 89d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+                {
+                    GameObjectNote();
+                    currentTime -= 89d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+                }
+            }
+            if (8d < time && time < 15d)
+            {
+                if (currentTime >= 88d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+                {
+                    GameObjectNote();
+                    currentTime -= 88d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+                }
+            }
 
-                // 빼내온 Note 객체에 적절한 위치 정보 값을 주고
-                t_note.transform.position = tfNoteAppear.position;
-                t_note.SetActive(true); // 활성화 상태로 돌리기
+            // 많은 비트 시작
+            if (15d <= time && time < 16d)
+            {
+                if (currentTime >= 40d / bpm)
+                {
+                    GameObjectNote();
+                    currentTime -= 40d / bpm;
+                }
+            }
 
-                theTimingManager.boxNoteList.Add(t_note); // 해당 리스트를 넣어주기
-                currentTime -= 60d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+            if (16d <= time && time < 21d)
+            {
+                if (currentTime >= 47d / bpm)
+                {
+                    GameObjectNote();
+                    currentTime -= 47d / bpm;
+                }
+            }
+
+            if (21d <= time && time <= 22d)
+            {
+                if (currentTime >= 60d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+                {
+                    GameObjectNote();
+                    currentTime -= 60d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+                }
+            }
+
+
+            if (21d < time && time < 30d)
+            {
+                if (currentTime >= 55d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+                {
+                    GameObjectNote();
+                    currentTime -= 55d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+                }
+            }
+
+            if (21d < time && time < 30d)
+            {
+                if (currentTime >= 63d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+                {
+                    GameObjectNote();
+                    currentTime -= 63d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+                }
+            }
+
+            if (30d < time && time < 36d)
+            {
+                if (currentTime >= 45d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+                {
+                    GameObjectNote();
+                    currentTime -= 45d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+                }
+            }
+
+            if (36d < time && time < 39d)
+            {
+                if (currentTime >= 30d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+                {
+                    GameObjectNote();
+                    currentTime -= 30d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+                }
+            }
+
+            if (39d < time && time < 46d)
+            {
+                if (currentTime >= 50d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+                {
+                    GameObjectNote();
+                    currentTime -= 50d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+                }
+            }
+            if (46d < time && time < 54d)
+            {
+                if (currentTime >= 40d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+                {
+                    GameObjectNote();
+                    currentTime -= 40d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+                }
+            }
+
+            if (54d < time && time < 55d)
+            {
+                if (currentTime >= 38d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+                {
+                    GameObjectNote();
+                    currentTime -= 38d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+                }
+            }
+
+            if (55d < time && time < 55.5d)
+            {
+                if (currentTime >= 40d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+                {
+                    GameObjectNote();
+                    currentTime -= 40d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+                }
+            }
+
+            if (55.5d < time && time < 56.5d)
+            {
+                if (currentTime >= 38d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+                {
+                    GameObjectNote();
+                    currentTime -= 38d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+                }
+            }
+            if (55.5d < time && time < 56d)
+            {
+                if (currentTime >= 40d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+                {
+                    GameObjectNote();
+                    currentTime -= 40d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+                }
+            }
+
+            if (56d < time && time < 60d)
+            {
+                if (currentTime >= 35d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+                {
+                    GameObjectNote();
+                    currentTime -= 35d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+                }
+            }
+
+            if (60d < time && time < 68d)
+            {
+                if (currentTime >= 50d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+                {
+                    GameObjectNote();
+                    currentTime -= 50d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+                }
+            }
+
+            if (60d < time && time < 66d)
+            {
+                if (currentTime >= 55d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+                {
+                    GameObjectNote();
+                    currentTime -= 55d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+                }
+            }
+
+            if (66d < time && time < 73d)
+            {
+                if (currentTime >= 60 / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+                {
+                    GameObjectNote();
+                    currentTime -= 60d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+                }
+            }
+
+            if (73d < time)
+            {
+                if (currentTime >= 500d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
+                {
+                    GameObjectNote();
+                    currentTime -= 500d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
+                }
             }
 
         }
+    }
+
+    public void GameObjectNote()
+    {
+        // 공유자원으로 설정된 ObjectPool의 instance를 참조하여 noteQueue에 접근 
+        // Dequeue키워드로 queue에 담긴 객체를 빼내온다
+        GameObject t_note = ObjectPool.instance.noteQueue.Dequeue();
+
+        // 빼내온 Note 객체에 적절한 위치 정보 값을 주고
+        t_note.transform.position = tfNoteAppear.position;
+        t_note.SetActive(true); // 활성화 상태로 돌리기
+
+        theTimingManager.boxNoteList.Add(t_note); // 해당 리스트를 넣어주기
     }
 
     private void OnTriggerExit2D(Collider2D collision)
