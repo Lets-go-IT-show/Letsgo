@@ -9,9 +9,6 @@ using Firebase.Unity.Editor;
 
 public class InsertScore : MonoBehaviour
 {
-
-    ScoreManager scoreManager;
-
     class Rank
     {
         public string name;
@@ -35,9 +32,7 @@ public class InsertScore : MonoBehaviour
         // 데이터베이스 경로를 설정해 인스턴스를 초기화
         // Database의 특정지점을 가리킬 수 있는데, 그 중 RootReference를 가리킴
 
-        int score = scoreManager.GetCurrentScore();
-
-        Rank rank = new Rank("구오이", score);
+        Rank rank = new Rank("이호걸", 777);
         string json = JsonUtility.ToJson(rank);
         // 데이터를 json형태로 반환
 

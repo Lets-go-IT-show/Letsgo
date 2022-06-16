@@ -1,5 +1,4 @@
-﻿
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -77,7 +76,7 @@ public class TimingManager : MonoBehaviour
                     // x의 값을 파라미터로 넘기기
                     theEffect.JudgementEffect(x); // 판정 연출
                     judgementRecord[x]++; // 판정 기록
-                    AudioManager.instance.PlaySFX("Clap");
+
                     return;
                 }
             }

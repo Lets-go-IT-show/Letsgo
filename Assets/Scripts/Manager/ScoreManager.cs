@@ -55,14 +55,10 @@ public class ScoreManager : MonoBehaviour
 
         // 애니메이션 실행
         myAnim.SetTrigger(animScoreUp);
-
-        // 콘솔로 점수 출력해보기
-        Debug.Log("점수 : " + currentScore);
     }
 
     public int GetCurrentScore()
     {
-        Debug.Log("점수 호출");
         return currentScore;
     }
 }
