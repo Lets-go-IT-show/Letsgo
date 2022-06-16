@@ -42,15 +42,15 @@ public class Main : MonoBehaviour
     }
 
     // 메뉴에서 방법 -> 게임 방법
-    public void GameRole()
+    public void GameRule()
     {
-        SceneManager.LoadScene("Role");
+        SceneManager.LoadScene("Rule1");
     }
 
 
-    public void GameRole_2()
+    public void GameRule2()
     {
-        SceneManager.LoadScene("Role_2");
+        SceneManager.LoadScene("Rule2");
     }
 
     public void Menu()
