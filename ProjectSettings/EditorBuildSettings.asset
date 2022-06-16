@@ -30,9 +30,18 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/TamedDashed.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Rule2.unity
     guid: f816fd6397e96504aaf92fefe074c437
+  - enabled: 1
+    path: Assets/Scenes/ChooseMusic.unity
+    guid: ab9597cb62e05704fbc644620f09b123
+  - enabled: 1
+    path: Assets/Scenes/WiIngWiIng.unity
+    guid: cfaf3246ba5bf0a43aa5e57767d35b37
+  - enabled: 1
+    path: Assets/Scenes/LoveDive.unity
+    guid: 5decae894824a0d4b8c794d0f0782231
   m_configObjects: {}

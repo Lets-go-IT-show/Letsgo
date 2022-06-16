@@ -11,6 +11,8 @@ public class CenterFlame : MonoBehaviour
 
     Result theResult;
 
+    public string musicName = null;
+
     private void Start()
     {
         theNote = FindObjectOfType<NoteManager>();
@@ -24,7 +26,7 @@ public class CenterFlame : MonoBehaviour
             // 닿은 콜라이더가 Note라면 실행
             if (collision.CompareTag("Note"))
             {
-                AudioManager.instance.PlayBGM("BGM0");
+                AudioManager.instance.PlayBGM(musicName);
                 musicStart = true;
             }
         }
@@ -36,8 +38,10 @@ public class CenterFlame : MonoBehaviour
             // 결과창 띄우기
             theResult.ShowResult();
             // 끝나는 지점 노래 추가
-        }
+        } 
 
 
     }
 }
+
+

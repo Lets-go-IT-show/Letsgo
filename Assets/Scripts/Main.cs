@@ -30,9 +30,9 @@ public class Main : MonoBehaviour
     }
 
     // 메뉴에서 시작 -> 게임 시작
-    public void GameStart()
+    public void ChooseMusic()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("ChooseMusic");
     }
 
     // 메뉴에서 시작 -> 순위
@@ -56,6 +56,21 @@ public class Main : MonoBehaviour
     public void Menu()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    public void LoveDive()
+    {
+        SceneManager.LoadScene("LoveDive");
+    }
+
+    public void TamedDashed()
+    {
+        SceneManager.LoadScene("TamedDashed");
+    }
+
+    public void WiIngWiIng()
+    {
+        SceneManager.LoadScene("WiIngWiIng");
     }
 
 }
