@@ -55,10 +55,13 @@ public class ScoreManager : MonoBehaviour
 
         // 애니메이션 실행
         myAnim.SetTrigger(animScoreUp);
+
+        Debug.Log("점수 : " + currentScore);
     }
 
     public int GetCurrentScore()
     {
+        Debug.Log("점수 호출");
         return currentScore;
     }
 }
