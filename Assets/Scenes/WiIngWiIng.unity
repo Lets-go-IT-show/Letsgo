@@ -441,8 +441,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 186, y: -453}
-  m_SizeDelta: {x: 330, y: 120}
+  m_AnchoredPosition: {x: 150, y: -453}
+  m_SizeDelta: {x: 250, y: 135}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &244227548
 MonoBehaviour:
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ae803ae69b1538f4991910eff2ff28c1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86e1c7634ae1c904d818a8f7618ede95, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -507,7 +507,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 244227548}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -2825,7 +2825,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 100}
   m_SizeDelta: {x: 600, y: 750}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &942856638
@@ -3161,7 +3161,7 @@ MonoBehaviour:
   - name: LoveDive
     clip: {fileID: 8300000, guid: fca8b2f5f46f3ba48993f998d87d54ae, type: 3}
   - name: Test
-    clip: {fileID: 8300000, guid: 8f7f071533e6ef6429f05c7147d26c52, type: 3}
+    clip: {fileID: 8300000, guid: d87f94b0b3582f94093419736a8172cb, type: 3}
   sfxPlayer: {fileID: 290452443}
   bgmPlayer: {fileID: 2130612623}
 --- !u!4 &1190179366
@@ -4185,7 +4185,7 @@ GameObject:
   - component: {fileID: 1631091869}
   - component: {fileID: 1631091868}
   m_Layer: 5
-  m_Name: Btn_Retry
+  m_Name: Btn_Rank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4207,8 +4207,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -185, y: -451}
-  m_SizeDelta: {x: 330, y: 120}
+  m_AnchoredPosition: {x: -180, y: -451}
+  m_SizeDelta: {x: 250, y: 135}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1631091868
 MonoBehaviour:
@@ -4251,7 +4251,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1438776529}
-        m_MethodName: GameName
+        m_MethodName: GameRank
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4279,7 +4279,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 61236a3bddec2b54182ff1b46a6d615f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d02c99cd1a4118b4a9c9479c3fc47b27, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
