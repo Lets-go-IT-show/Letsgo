@@ -16,9 +16,11 @@ public class SelectScore : MonoBehaviour
 
         public string name;
         public int score;
+        public string music;
 
-        public Rank(string name, int score)
+        public Rank(string music, string name, int score)
         {
+            this.music = music;
             this.name = name;
             this.score = score;
         }
@@ -50,7 +52,7 @@ public class SelectScore : MonoBehaviour
                 {
                     IDictionary rank = (IDictionary)data.Value;
                     // Debug.Log("이름: " + rank["name"] + ", 점수: " + rank["score"]);
-                    Rank.ranks.Add(new Rank(rank["name"].ToString(), int.Parse(rank["score"].ToString())));
+                    Rank.ranks.Add(new Rank(rank["music"].ToString(), rank["name"].ToString(), int.Parse(rank["score"].ToString())));
                 }
 
 
@@ -58,7 +60,7 @@ public class SelectScore : MonoBehaviour
 
                 foreach (var item in Rank.ranks)
                 {
-                    Debug.Log(item.name + " " + item.score);
+                    Debug.Log(item.music+ " " + item.name + " " + item.score);
                 }
             }
         });

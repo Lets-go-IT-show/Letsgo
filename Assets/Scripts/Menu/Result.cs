@@ -26,9 +26,11 @@ public class Result : MonoBehaviour
     {
         public string name;
         public int score;
+        public string music;
 
-        public Rank(string name, int score)
+        public Rank(string music, string name, int score)
         {
+            this.music = music;
             this.name = name;
             this.score = score;
         }
@@ -69,8 +71,12 @@ public class Result : MonoBehaviour
 
         // Debug.Log("usrename넘어오는지 확인 : " + UserName.username);
         UserName theName = new UserName();
+        MusicChoice theMusic = new MusicChoice();
+        Debug.Log("노래 호출 : " + MusicChoice.musicname);
+
+
         Debug.Log("구오이 점수 콘솔 : " + theScore.GetCurrentScore());
-        Rank rank = new Rank(UserName.username, theScore.GetCurrentScore());
+        Rank rank = new Rank(MusicChoice.musicname, UserName.username, theScore.GetCurrentScore());
         string json = JsonUtility.ToJson(rank);
 
         string key = reference.Child("rank").Push().Key;

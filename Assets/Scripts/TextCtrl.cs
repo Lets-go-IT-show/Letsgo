@@ -29,9 +29,11 @@ public class TextCtrl : MonoBehaviour
 
         public string name;
         public int score;
+        public string music;
 
-        public Rank(string name, int score)
+        public Rank(string music, string name, int score)
         {
+            this.music = music;
             this.name = name;
             this.score = score;
         }
@@ -64,7 +66,7 @@ public class TextCtrl : MonoBehaviour
                 {
                     IDictionary rank = (IDictionary)data.Value;
                     // Debug.Log("이름: " + rank["name"] + ", 점수: " + rank["score"]);
-                    Rank.ranks.Add(new Rank(rank["name"].ToString(), int.Parse(rank["score"].ToString())));
+                    Rank.ranks.Add(new Rank(rank["music"].ToString(), rank["name"].ToString(), int.Parse(rank["score"].ToString())));
                 }
 
 
@@ -80,7 +82,7 @@ public class TextCtrl : MonoBehaviour
 
                     else
                     {
-                        ScoreText1.text += item.name + "    " + item.score + "점\n";
+                        ScoreText1.text += item.music + "    " + item.name + "    " + item.score + "점\n";
                         cnt++;
                     }
 
