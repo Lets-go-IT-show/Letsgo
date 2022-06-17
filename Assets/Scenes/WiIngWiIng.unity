@@ -2061,7 +2061,6 @@ GameObject:
   m_Component:
   - component: {fileID: 710136501}
   - component: {fileID: 710136506}
-  - component: {fileID: 710136505}
   - component: {fileID: 710136504}
   - component: {fileID: 710136503}
   - component: {fileID: 710136502}
@@ -2103,7 +2102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cafd7638b1bbc4e4ca1f3801be6fb479, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicName: Test
+  musicName: WiIngWiIng
 --- !u!114 &710136503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2157,102 +2156,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20, y: 150}
   m_EdgeRadius: 0
---- !u!82 &710136505
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 710136500}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d87f94b0b3582f94093419736a8172cb, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!222 &710136506
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3156,11 +3059,11 @@ MonoBehaviour:
   - name: Clap
     clip: {fileID: 8300000, guid: 1e1308666e0ec4e4496640c97197d765, type: 3}
   bgm:
-  - name: TimedDahsed
+  - name: TamedDashed
     clip: {fileID: 8300000, guid: 37da1970c1921fc47a75c1b260d66d29, type: 3}
   - name: LoveDive
     clip: {fileID: 8300000, guid: fca8b2f5f46f3ba48993f998d87d54ae, type: 3}
-  - name: Test
+  - name: WiIngWiIng
     clip: {fileID: 8300000, guid: d87f94b0b3582f94093419736a8172cb, type: 3}
   sfxPlayer: {fileID: 290452443}
   bgmPlayer: {fileID: 2130612623}
