@@ -13,19 +13,19 @@ public class MusicChoice : MonoBehaviour
 
     public void Music01()
     {
-        musicname = "Tamed Dashed";
+        musicname = "TamedDashed";
         Debug.Log("템데호출 : " + musicname);
     }
 
     public void Music02()
     {
-        musicname = "LOVE DIVE";
+        musicname = "LoveDive";
         Debug.Log("럽다호출 : " + musicname);
     }
 
     public void Music03()
     {
-        musicname = "위잉위잉";
+        musicname = "WiIngWiIng";
         Debug.Log("위잉위잉호출 : " + musicname);
     }
 }

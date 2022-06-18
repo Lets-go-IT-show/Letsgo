@@ -10,8 +10,9 @@ using UnityEngine.UI;
 
 public class TextCtrl : MonoBehaviour
 {
-    private int Score = 0;
-    public Text ScoreText1 = null;
+    public Text LoveDive_Rank = null;
+    public Text Tamed_Rank = null;
+    public Text WiIng_Rank = null;
 
     /*void Update()
     {
@@ -73,22 +74,25 @@ public class TextCtrl : MonoBehaviour
                 Rank.ranks.Sort();
 
 
-                int cnt = 0;
+                int[] cnt = new int[3];
 
                 foreach (var item in Rank.ranks)
                 {
-
-                    if (cnt > 6) { break; }
-
-                    else
+                    if (item.music == "LoveDive" && cnt[0] < 4)
                     {
-                        ScoreText1.text += item.music + "    " + item.name + "    " + item.score + "점\n";
-                        cnt++;
+                        LoveDive_Rank.text += item.name + "    " + item.score + "점\n";
+                        cnt[0]++;
                     }
-
-                    Debug.Log(item.name + " " + item.score);
-
-                    // ScoreText1.text += item.name + "          " + item.score+"점\n";
+                    else if (item.music == "TamedDashed" && cnt[1] < 4)
+                    {
+                        Tamed_Rank.text += item.name + "    " + item.score + "점\n";
+                        cnt[1]++;
+                    }
+                    else if (item.music == "WiIngWiIng" && cnt[2] < 4)
+                    {
+                        WiIng_Rank.text += item.name + "    " + item.score + "점\n";
+                        cnt[2]++;
+                    }
 
 
                 }
