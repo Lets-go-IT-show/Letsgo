@@ -467,9 +467,9 @@ MonoBehaviour:
   - name: TamedDashed
     clip: {fileID: 8300000, guid: 37da1970c1921fc47a75c1b260d66d29, type: 3}
   - name: LoveDive
-    clip: {fileID: 8300000, guid: fca8b2f5f46f3ba48993f998d87d54ae, type: 3}
+    clip: {fileID: 8300000, guid: 38524aea56b18d046b441a3e389f9538, type: 3}
   - name: WiIngWiIng
-    clip: {fileID: 8300000, guid: d87f94b0b3582f94093419736a8172cb, type: 3}
+    clip: {fileID: 8300000, guid: b1336b434b6723349961fb3aa6080b4e, type: 3}
   sfxPlayer: {fileID: 824826783}
   bgmPlayer: {fileID: 536037742}
 --- !u!4 &106095949

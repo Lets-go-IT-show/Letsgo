@@ -1525,7 +1525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e67489d2aa7f2e14281580665d31f72c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bpm: 80
+  bpm: 100
   tfNoteAppear: {fileID: 833223370}
 --- !u!61 &528890855
 BoxCollider2D:
@@ -2087,7 +2087,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1350, y: 398.65228}
+  m_AnchoredPosition: {x: 1200, y: 398.65228}
   m_SizeDelta: {x: 90, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &710136502
@@ -3062,9 +3062,9 @@ MonoBehaviour:
   - name: TamedDashed
     clip: {fileID: 8300000, guid: 37da1970c1921fc47a75c1b260d66d29, type: 3}
   - name: LoveDive
-    clip: {fileID: 8300000, guid: fca8b2f5f46f3ba48993f998d87d54ae, type: 3}
+    clip: {fileID: 8300000, guid: 38524aea56b18d046b441a3e389f9538, type: 3}
   - name: WiIngWiIng
-    clip: {fileID: 8300000, guid: d87f94b0b3582f94093419736a8172cb, type: 3}
+    clip: {fileID: 8300000, guid: b1336b434b6723349961fb3aa6080b4e, type: 3}
   sfxPlayer: {fileID: 290452443}
   bgmPlayer: {fileID: 2130612623}
 --- !u!4 &1190179366
