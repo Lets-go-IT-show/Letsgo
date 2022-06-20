@@ -23,6 +23,8 @@ public class TimingManager : MonoBehaviour
     EffectManager theEffect;
     // ScoreManager 참고
     ScoreManager theScoreManager;
+
+    // 콤보 매니저 참조하는 변수
     ComboManager theComboManager;
 
 
@@ -74,6 +76,12 @@ public class TimingManager : MonoBehaviour
                     if (x < timingBoxs.Length - 1)
                         theEffect.NoteHitEffect();
 
+                    // Perfect가 아니면 콤보 초기화
+                    if (x != 0)
+                    {
+                        theComboManager.ResetCombo();
+                    }
+
                     theScoreManager.IncreaseScore(x); // 점수 증가
                     // bad에 점수를 주기 싫다면 판정 연출 조건문 안에 끼워넣기 
                     // x의 값을 파라미터로 넘기기
@@ -81,11 +89,13 @@ public class TimingManager : MonoBehaviour
                     judgementRecord[x]++; // 판정 기록
                     AudioManager.instance.PlaySFX("Clap");
                     return;
+
                 }
             }
         }
         // miss 뜨는 위치에 combo reset
         theComboManager.ResetCombo();
+
         // timingBoxs의 배열 개수는 4이므로 length를 이용
         theEffect.JudgementEffect(timingBoxs.Length);
         MissRecord();
