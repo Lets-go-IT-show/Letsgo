@@ -53,6 +53,11 @@ public class Main : MonoBehaviour
         SceneManager.LoadScene("Rule2");
     }
 
+    public void GameRule3()
+    {
+        SceneManager.LoadScene("Rule3");
+    }
+
     public void Menu()
     {
         SceneManager.LoadScene("Menu");

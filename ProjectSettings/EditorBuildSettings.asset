@@ -36,10 +36,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Rule2.unity
     guid: f816fd6397e96504aaf92fefe074c437
   - enabled: 1
+    path: Assets/Scenes/Rule3.unity
+    guid: d59ca37b699d3fd4cae3faa9782db7d6
+  - enabled: 1
     path: Assets/Scenes/ChooseMusic.unity
     guid: ab9597cb62e05704fbc644620f09b123
   - enabled: 1
-    path: Assets/Scenes/TheWayThisGuyLives.unity
+    path: Assets/Scenes/Thewaythisguylives.unity
     guid: cfaf3246ba5bf0a43aa5e57767d35b37
   - enabled: 1
     path: Assets/Scenes/TomBoy.unity
