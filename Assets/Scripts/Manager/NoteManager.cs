@@ -411,6 +411,7 @@ public class NoteManager : MonoBehaviour
                     }
                 }
                 break;
+
             case 1:
                 {
                     if (noteActive)
@@ -433,7 +434,7 @@ public class NoteManager : MonoBehaviour
                         }
 
                         // Loot at you, 넌 못 감당해 날
-                        if (6d <= time && time < 8d)
+                        if (5.8d <= time && time < 6d)
                         {
                             if (currentTime >= 50d / bpm)
                             {
@@ -443,12 +444,12 @@ public class NoteManager : MonoBehaviour
                         }
 
                         // You took (umm) off hook (yah)
-                        if (8d <= time && time < 10.5d)
+                        if (6d <= time && time < 10.5d)
                         {
-                            if (currentTime >= 67d / bpm)
+                            if (currentTime >= 60d / bpm)
                             {
                                 GameObjectNote();
-                                currentTime -= 67d / bpm;
+                                currentTime -= 60d / bpm;
                             }
                         }
 
@@ -463,7 +464,7 @@ public class NoteManager : MonoBehaviour
 
 
                         //기분은 Coke like brrr
-                        if (11d <= time && time < 14d)
+                        if (11d <= time && time < 16d)
                         {
                             if (currentTime >= 45d / bpm)
                             {
@@ -473,14 +474,14 @@ public class NoteManager : MonoBehaviour
                         }
 
                         // 노트없음
-                        if (14d <= time && time < 16d)
+                        /*if (14d <= time && time < 16d)
                         {
                             if (currentTime >= 68d / bpm)
                             {
                                 currentTime -= 68d / bpm;
                             }
-                        }
-
+                        }*/
+                        
                         //Look at my toe 나의 Ex 이름 Tattoo
                         if (16d <= time && time < 18d)
                         {
@@ -492,36 +493,7 @@ public class NoteManager : MonoBehaviour
                         }
 
                         //I got to drink up now 네가 싫다 해도 좋아
-                        if (18d <= time && time < 23d)
-                        {
-                            if (currentTime >= 44d / bpm)
-                            {
-                                GameObjectNote();
-                                currentTime -= 44d / bpm;
-                            }
-                        }
-
-                        // Why are you cranky, boy?
-                        if (23d <= time && time < 25d)
-                        {
-                            if (currentTime >= 40d / bpm)
-                            {
-                                GameObjectNote();
-                                currentTime -= 40d / bpm;
-                            }
-                        }
-
-                        // 노트없음
-                        if (25d <= time && time < 26d)
-                        {
-                            if (currentTime >= 68d / bpm)
-                            {
-                                currentTime -= 68d / bpm;
-                            }
-                        }
-
-                        // 뭘 그리 찡그려 너
-                        if (26d <= time && time < 29d)
+                        if (18d <= time && time < 22.8d)
                         {
                             if (currentTime >= 37d / bpm)
                             {
@@ -530,7 +502,36 @@ public class NoteManager : MonoBehaviour
                             }
                         }
 
-                        if (29d <= time && time < 30d)
+                        // Why are you cranky, boy?
+                        if (22.8d <= time && time < 25d)
+                        {
+                            if (currentTime >= 37d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 37d / bpm;
+                            }
+                        }
+
+                        // 노트없음
+                        if (25d <= time && time < 25.8d)
+                        {
+                            if (currentTime >= 68d / bpm)
+                            {
+                                currentTime -= 68d / bpm;
+                            }
+                        }
+
+                        // 뭘 그리 찡그려 너
+                        if (25.8d <= time && time < 29d)
+                        {
+                            if (currentTime >= 37d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 37d / bpm;
+                            }
+                        }
+
+                        if (29d <= time && time < 29.5d)
                         {
                             if (currentTime >= 41d / bpm)
                             {
@@ -540,7 +541,7 @@ public class NoteManager : MonoBehaviour
 
 
                         //Do you want a blond barbie doll?
-                        if (30d <= time && time < 33d)
+                        if (29.5d <= time && time < 33d)
                         {
                             if (currentTime >= 41d / bpm)
                             {
@@ -692,7 +693,10 @@ public class NoteManager : MonoBehaviour
 
                     }
                 }
-                    break;
+
+                break;
+
+
             case 2:
                 {
                     if (noteActive)
