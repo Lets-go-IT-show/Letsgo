@@ -81,44 +81,44 @@ public class NoteManager : MonoBehaviour
                             }
                         }
 
-                        if (12.8d <= time && time < 12.9d)
+                        /*if (12.8d <= time && time < 12.9d)
                         {
                             if (currentTime >= 40d / bpm)
                             {
                                 currentTime -= 40d / bpm;
                             }
-                        }
+                        }*/
 
                         // 성훈이 파트
-                        if (12.9d <= time && time < 17d)
+                        if (12.8d <= time && time < 17d)
                         {
-                            if (currentTime >= 30d / bpm)
+                            if (currentTime >= 62d / bpm)
                             {
                                 GameObjectNote();
-                                currentTime -= 30d / bpm;
+                                currentTime -= 62d / bpm;
                             }
                         }
 
 
                         if (17d <= time && time < 18d)
                         {
-                            if (currentTime >= 32d / bpm)
+                            if (currentTime >= 62d / bpm)
                             {
                                 GameObjectNote();
-                                currentTime -= 32d / bpm;
+                                currentTime -= 62d / bpm;
                             }
                         }
                         // 노트 없음
-                        if (18d <= time && time < 19.3d)
+                        /*if (18d <= time && time < 19.3d)
                         {
                             if (currentTime >= 55d / bpm)
                             {
                                 currentTime -= 55d / bpm;
                             }
-                        }
+                        }*/
 
                         // 니키 파트
-                        if (19.3d <= time && time < 22d)
+                        if (18d <= time && time < 22d)
                         {
                             if (currentTime >= 62d / bpm)
                             {
@@ -145,49 +145,49 @@ public class NoteManager : MonoBehaviour
                         }
 
                         // 정원 선우 파트
-                        if (25d <= time && time < 25.5d)
+                        if (25d <= time && time < 25.8d)
                         {
-                            if (currentTime >= 38d / bpm)
+                            if (currentTime >= 60d / bpm)
                             {
-                                currentTime -= 38d / bpm;
+                                currentTime -= 60d / bpm;
                             }
                         }
 
-                        if (25.5d <= time && time < 27.8d)
+                        if (25.9d <= time && time < 27.8d)
                         {
-                            if (currentTime >= 48d / bpm)
+                            if (currentTime >= 60d / bpm)
                             {
                                 GameObjectNote();
-                                currentTime -= 48d / bpm;
+                                currentTime -= 60d / bpm;
                             }
                         }
                         // 일단 뛰어
-                        if (27.8d <= time && time < 28.4d)
+                        if (27.8d <= time && time < 28.5d)
                         {
-                            if (currentTime >= 57d / bpm)
+                            if (currentTime >= 60d / bpm)
                             {
-                                currentTime -= 57d / bpm;
+                                currentTime -= 60d / bpm;
                             }
                         }
-                        if (28.4d <= time && time < 31d)
+                        if (28.6d <= time && time < 31.5d)
                         {
-                            if (currentTime >= 48d / bpm)
+                            if (currentTime >= 60d / bpm)
                             {
                                 GameObjectNote();
-                                currentTime -= 48d / bpm;
+                                currentTime -= 60d / bpm;
                             }
                         }
 
                         // 제이크 불꽃에
-                        if (30.5d <= time && time < 31.2d)
+                        /*if (31.6d <= time && time < 31.2d)
                         {
                             if (currentTime >= 50d / bpm)
                             {
                                 currentTime -= 50d / bpm;
                             }
-                        }
+                        }*/
 
-                        if (31.2d <= time && time < 34d)
+                        if (31.6d <= time && time < 34d)
                         {
                             if (currentTime >= 59d / bpm)
                             {
@@ -198,9 +198,9 @@ public class NoteManager : MonoBehaviour
                         // 종성 파트 정답을
                         if (34d <= time && time < 34.2d)
                         {
-                            if (currentTime >= 40d / bpm)
+                            if (currentTime >= 32d / bpm)
                             {
-                                currentTime -= 40d / bpm;
+                                currentTime -= 32d / bpm;
                             }
                         }
 
@@ -215,27 +215,27 @@ public class NoteManager : MonoBehaviour
                         // 이희승 뜨거운 심장
                         if (36.55d <= time && time < 37.8d)
                         {
-                            if (currentTime >= 40d / bpm)
+                            if (currentTime >= 34d / bpm)
                             {
-                                currentTime -= 40d / bpm;
+                                currentTime -= 34d / bpm;
                             }
                         }
 
                         if (37.8d <= time && time < 40d)
                         {
-                            if (currentTime >= 32d / bpm)
+                            if (currentTime >= 34d / bpm)
                             {
                                 GameObjectNote();
-                                currentTime -= 32d / bpm;
+                                currentTime -= 34d / bpm;
                             }
                         }
 
                         if (40d <= time && time < 44d)
                         {
-                            if (currentTime >= 32d / bpm)
+                            if (currentTime >= 34d / bpm)
                             {
                                 GameObjectNote();
-                                currentTime -= 31d / bpm;
+                                currentTime -= 34d / bpm;
                             }
                         }
 
@@ -259,13 +259,13 @@ public class NoteManager : MonoBehaviour
                         // 일단 뛰어
                         if (46.8d <= time && time < 47.4d)
                         {
-                            if (currentTime >= 48d / bpm)
+                            if (currentTime >= 57d / bpm)
                             {
-                                currentTime -= 48d / bpm;
+                                currentTime -= 57d / bpm;
                             }
                         }
 
-                        if (47.4d <= time && time < 51d)
+                        if (47.4d <= time && time < 49.8d)
                         {
                             if (currentTime >= 57d / bpm)
                             {
@@ -273,16 +273,140 @@ public class NoteManager : MonoBehaviour
                                 currentTime -= 57d / bpm;
                             }
                         }
-                        /*
+
+                        
+                        if (49.8d <= time && time < 50.1d)
+                        {
+                            if (currentTime >= 80d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 80d / bpm;
+                            }
+                        }
+
+                        // 나의 나침반
+                        if (50.2d <= time && time < 56.6d)
+                        {
+                            if (currentTime >= 34d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 34d / bpm;
+                            }
+                        }
+
+                        // 섬머!
+                        if (56.6 <= time && time < 57d)
+                        {
+                            if (currentTime >= 40d / bpm)
+                            {
+                                currentTime -= 40d / bpm;
+                            }
+                        }
+
+                        if (57d <= time && time < 59d)
+                        {
+                            if (currentTime >= 57d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 57d / bpm;
+                            }
+                        }
+                        // 일단 뛰어
+                        if (59d <= time && time < 59.5d)
+                        {
+                            if (currentTime >= 57d / bpm)
+                            {
+                                currentTime -= 57d / bpm;
+                            }
+                        }
+
+                        if (59.5d <= time && time < 62.4d)
+                        {
+                            if (currentTime >= 57d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 57d / bpm;
+                            }
+                        }
+
+                        // 우우우우우우우우우
+                        if (62.4d <= time && time < 68d)
+                        {
+                            if (currentTime >= 38d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 38d / bpm;
+                            }
+                        }
+
+                        // 정답이 아니라해도
+                        if (68d <= time && time < 69.2d)
+                        {
+                            if (currentTime >= 50d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 50d / bpm;
+                            }
+                        }
+
+                        // 우우우우우우우
+                        if (69.2d <= time && time < 70.5d)
+                        {
+                            if (currentTime >= 38d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 38d / bpm;
+                            }
+                        }
+
+                        // 정답이 아니라해도
+                        if (70.5d <= time && time < 71.5d)
+                        {
+                            if (currentTime >= 50d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 50d / bpm;
+                            }
+                        }
+
+                        // 우우우우우우우
+                        if (71.5d <= time && time < 72.8d)
+                        {
+                            if (currentTime >= 38d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 38d / bpm;
+                            }
+                        }
+
+                        if (72.8d <= time && time < 75d)
+                        {
+                            if (currentTime >= 50d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 50d / bpm;
+                            }
+                        }
+
+                        if (75d <= time && time < 75.8d)
+                        {
+                            if (currentTime >= 50d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 50d / bpm;
+                            }
+                        }
+
+                        
                         // 마무리 결과창을 위한 출력
-                        if (73d < time)
+                        if (76d < time)
                         {
                             if (currentTime >= 500d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
                             {
                                 GameObjectNote();
                                 currentTime -= 500d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
                             }
-                        }*/
+                        }
 
                     }
                 }
