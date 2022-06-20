@@ -873,6 +873,64 @@ public class NoteManager : MonoBehaviour
                                 currentTime -= 80d / bpm;
                             }
                         }
+                        if (74.0d <= time && time < 75d)
+                        {
+                            if (currentTime >= 50d / bpm)
+                            {
+                                currentTime -= 50d / bpm;
+                            }
+                        }
+
+                        //맨몸으로 부딪쳤던 내 삶에 그까짓 이별쯤은 괜찮아
+                        if (75.0d <= time && time < 75.3d)
+                        {
+                            if (currentTime >= 20d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 20d / bpm;
+                            }
+                        }
+                        if (75.3d <= time && time < 76d)
+                        {
+                            if (currentTime >= 50d / bpm)
+                            {
+                                currentTime -= 50d / bpm;
+                            }
+                        }
+                        if (76d <= time && time < 76.3d)
+                        {
+                            if (currentTime >= 23d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 23d / bpm;
+                            }
+                        }
+                        if (76.3d <= time && time < 79d)
+                        {
+                            if (currentTime >= 50d / bpm)
+                            {
+                                currentTime -= 50d / bpm;
+                            }
+                        }
+                        if (79d <= time && time < 82.6d)
+                        {
+                            if (currentTime >= 62d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 62d / bpm;
+                            }
+                        }
+
+                        //이대로 무너지면 절대로 안돼
+                        /*if (80.6d <= time && time < 82d)
+                        {
+                            if (currentTime >= 62d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 62d / bpm;
+                            }
+                        }*/
+
                         /*
                        // 마무리 결과창을 위한 출력
                        if (73d < time)
