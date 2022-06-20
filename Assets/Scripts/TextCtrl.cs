@@ -42,9 +42,7 @@ public class TextCtrl : MonoBehaviour
         public int CompareTo(object obj)
         {
             Rank r = (Rank)obj;
-            //Debug.Log(this.score + " vs. " + r.score + " = " + this.score.CompareTo(r.score));
             return -1 * this.score.CompareTo(r.score);
-            // return this.score.CompareTo(r.score);
         }
     }
 
@@ -66,40 +64,36 @@ public class TextCtrl : MonoBehaviour
                 foreach (DataSnapshot data in snapshot.Children)
                 {
                     IDictionary rank = (IDictionary)data.Value;
-                    // Debug.Log("이름: " + rank["name"] + ", 점수: " + rank["score"]);
                     Rank.ranks.Add(new Rank(rank["music"].ToString(), rank["name"].ToString(), int.Parse(rank["score"].ToString())));
                 }
 
-
                 Rank.ranks.Sort();
-
 
                 int[] cnt = new int[3];
 
                 foreach (var item in Rank.ranks)
                 {
-                    if (item.music == "TomBoy" && cnt[0] < 4)
+                    String userName = item.name;
+                    if (item.music == "TomBoy" && cnt[0] < 5)
                     {
-                        LoveDive_Rank.text += item.name + "    " + item.score + "점\n";
+                        if (item.name.Length >= 6) userName = userName.Substring(0,5) + "...";
+                        LoveDive_Rank.text += userName + "      "+ item.score + "점\n\n";
                         cnt[0]++;
                     }
-                    else if (item.music == "TamedDashed" && cnt[1] < 4)
+                    else if (item.music == "TamedDashed" && cnt[1] < 5)
                     {
-                        Tamed_Rank.text += item.name + "    " + item.score + "점\n";
+                        if (item.name.Length >= 6) userName = userName.Substring(6)+"...";
+                        Tamed_Rank.text += userName + "      " + item.score + "점\n\n";
                         cnt[1]++;
                     }
-                    else if (item.music == "폼생폼사" && cnt[2] < 4)
+                    else if (item.music == "폼생폼사" && cnt[2] < 5)
                     {
-                        WiIng_Rank.text += item.name + "    " + item.score + "점\n";
+                        if (item.name.Length >= 6) userName = userName.Substring(6) + "...";
+                        WiIng_Rank.text += userName + "      " + item.score + "점\n\n";
                         cnt[2]++;
                     }
-
-
                 }
-
             }
         });
-
-
     }
 }
