@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using Firebase;
 using Firebase.Database;
 using Firebase.Unity.Editor;
+using UnityEngine.SceneManagement;
 
 public class UserName : MonoBehaviour
 {
@@ -18,13 +19,29 @@ public class UserName : MonoBehaviour
     public void Start()
     {
         username = inputname.GetComponent<InputField>().text;
+
+        if (username == "")
+        {
+            Debug.Log("null이 들어오는 지  : " + username);
+
+        }
+        else
+        {
+            Debug.Log("이름 뭐로 찍히나 : " + username);
+            ChooseMusic();
+        }
+
         Debug.Log("start : " + username);
     }
 
-    // Update is called once per frame
-    public void Update()
+    public void GameName()
     {
+        SceneManager.LoadScene("Name");
+    }
 
+    public void ChooseMusic()
+    {
+        SceneManager.LoadScene("ChooseMusic");
     }
 
     public string GetUserName()
