@@ -72,11 +72,11 @@ public class Result : MonoBehaviour
         // Debug.Log("usrename넘어오는지 확인 : " + UserName.username);
         UserName theName = new UserName();
         MusicChoice theMusic = new MusicChoice();
-        Debug.Log("노래 호출 : " + MusicChoice.musicname);
+        Debug.Log("노래 호출 : " + MusicChoice.musicName);
 
 
         Debug.Log("구오이 점수 콘솔 : " + theScore.GetCurrentScore());
-        Rank rank = new Rank(MusicChoice.musicname, UserName.username, theScore.GetCurrentScore());
+        Rank rank = new Rank(MusicChoice.musicName, UserName.username, theScore.GetCurrentScore());
         string json = JsonUtility.ToJson(rank);
 
         string key = reference.Child("rank").Push().Key;

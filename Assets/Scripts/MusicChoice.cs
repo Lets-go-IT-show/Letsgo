@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class MusicChoice : MonoBehaviour
 {
-    public static string musicname;
+    public static string musicName;
+    public static int musicIndex;
 
     public void Start()
     {
@@ -13,19 +14,22 @@ public class MusicChoice : MonoBehaviour
 
     public void Music01()
     {
-        musicname = "TamedDashed";
-        Debug.Log("템데호출 : " + musicname);
+        musicIndex = 0;
+        musicName = "TamedDashed";
+        Debug.Log("템데호출 : " + musicName);
     }
 
     public void Music02()
     {
-        musicname = "LoveDive";
-        Debug.Log("럽다호출 : " + musicname);
+        musicIndex = 1;
+        musicName = "LoveDive";
+        Debug.Log("럽다호출 : " + musicName);
     }
 
     public void Music03()
     {
-        musicname = "WiIngWiIng";
-        Debug.Log("위잉위잉호출 : " + musicname);
+        musicIndex = 2;
+        musicName = "WiIngWiIng";
+        Debug.Log("위잉위잉호출 : " + musicName);
     }
 }
