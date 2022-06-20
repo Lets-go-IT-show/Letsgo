@@ -58,9 +58,9 @@ public class Main : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
-    public void LoveDive()
+    public void TomBoy()
     {
-        SceneManager.LoadScene("LoveDive");
+        SceneManager.LoadScene("TomBoy");
     }
 
     public void TamedDashed()
@@ -68,9 +68,9 @@ public class Main : MonoBehaviour
         SceneManager.LoadScene("TamedDashed");
     }
 
-    public void WiIngWiIng()
+    public void Thewaythisguylives()
     {
-        SceneManager.LoadScene("WiIngWiIng");
+        SceneManager.LoadScene("Thewaythisguylives");
     }
 
 }

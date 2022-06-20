@@ -22,14 +22,14 @@ public class MusicChoice : MonoBehaviour
     public void Music02()
     {
         musicIndex = 1;
-        musicName = "LoveDive";
-        Debug.Log("럽다호출 : " + musicName);
+        musicName = "TomBoy";
+        Debug.Log("톰보이호출 : " + musicName);
     }
 
     public void Music03()
     {
         musicIndex = 2;
-        musicName = "WiIngWiIng";
-        Debug.Log("위잉위잉호출 : " + musicName);
+        musicName = "폼생폼사";
+        Debug.Log("폼생폼사호출 : " + musicName);
     }
 }

@@ -39,9 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ChooseMusic.unity
     guid: ab9597cb62e05704fbc644620f09b123
   - enabled: 1
-    path: Assets/Scenes/WiIngWiIng.unity
+    path: Assets/Scenes/Thewaythisguylives.unity
     guid: cfaf3246ba5bf0a43aa5e57767d35b37
   - enabled: 1
-    path: Assets/Scenes/LoveDive.unity
+    path: Assets/Scenes/TomBoy.unity
     guid: 5decae894824a0d4b8c794d0f0782231
   m_configObjects: {}

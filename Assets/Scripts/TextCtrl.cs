@@ -78,7 +78,7 @@ public class TextCtrl : MonoBehaviour
 
                 foreach (var item in Rank.ranks)
                 {
-                    if (item.music == "LoveDive" && cnt[0] < 4)
+                    if (item.music == "TomBoy" && cnt[0] < 4)
                     {
                         LoveDive_Rank.text += item.name + "    " + item.score + "점\n";
                         cnt[0]++;
@@ -88,7 +88,7 @@ public class TextCtrl : MonoBehaviour
                         Tamed_Rank.text += item.name + "    " + item.score + "점\n";
                         cnt[1]++;
                     }
-                    else if (item.music == "WiIngWiIng" && cnt[2] < 4)
+                    else if (item.music == "폼생폼사" && cnt[2] < 4)
                     {
                         WiIng_Rank.text += item.name + "    " + item.score + "점\n";
                         cnt[2]++;
