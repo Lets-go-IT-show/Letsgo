@@ -690,6 +690,15 @@ public class NoteManager : MonoBehaviour
                             }
                         }
 
+                        // 마무리 결과창을 위한 출력
+                        if (70d < time)
+                        {
+                            if (currentTime >= 500d / bpm) 
+                            {
+                                GameObjectNote();
+                                currentTime -= 500d / bpm;
+                            }
+                        }
 
                     }
                 }
@@ -1049,6 +1058,16 @@ public class NoteManager : MonoBehaviour
                             }
                         }
 
+                        // 마무리 결과창을 위한 출력
+                        if (83d < time)
+                        {
+                            if (currentTime >= 500d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 500d / bpm;
+                            }
+                        }
+
                         //이대로 무너지면 절대로 안돼
                         /*if (80.6d <= time && time < 82d)
                         {
@@ -1058,18 +1077,6 @@ public class NoteManager : MonoBehaviour
                                 currentTime -= 62d / bpm;
                             }
                         }*/
-
-                        /*
-                       // 마무리 결과창을 위한 출력
-                       if (73d < time)
-                       {
-                           if (currentTime >= 500d / bpm) // 60이라는 숫자의 크기가 작을 수록 노트 생성되는 간격이 줄어들면서 노트들이 많이 생성된다, 현재 게임에서 bpm이 80으로 설정되어 있음, 
-                           {
-                               GameObjectNote();
-                               currentTime -= 500d / bpm; // currentTime = 0 안됨, 소수점 오차발생/시간적 손실 발생
-                           }
-                       }*/
-
                     }
                 }
                 break;
