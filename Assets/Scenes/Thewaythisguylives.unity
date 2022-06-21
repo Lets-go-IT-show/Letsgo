@@ -4382,7 +4382,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 378838472}
         m_MethodName: GameRank
         m_Mode: 1
         m_Arguments:
