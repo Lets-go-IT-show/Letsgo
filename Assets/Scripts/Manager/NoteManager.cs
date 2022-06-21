@@ -274,7 +274,7 @@ public class NoteManager : MonoBehaviour
                             }
                         }
 
-                        
+
                         if (49.8d <= time && time < 50.1d)
                         {
                             if (currentTime >= 80d / bpm)
@@ -397,7 +397,7 @@ public class NoteManager : MonoBehaviour
                             }
                         }
 
-                        
+
                         // 마무리 결과창을 위한 출력
                         if (76d < time)
                         {
@@ -481,7 +481,7 @@ public class NoteManager : MonoBehaviour
                                 currentTime -= 68d / bpm;
                             }
                         }*/
-                        
+
                         //Look at my toe 나의 Ex 이름 Tattoo
                         if (16d <= time && time < 18d)
                         {
@@ -693,7 +693,7 @@ public class NoteManager : MonoBehaviour
                         // 마무리 결과창을 위한 출력
                         if (70d < time)
                         {
-                            if (currentTime >= 500d / bpm) 
+                            if (currentTime >= 500d / bpm)
                             {
                                 GameObjectNote();
                                 currentTime -= 500d / bpm;
@@ -725,14 +725,14 @@ public class NoteManager : MonoBehaviour
 
                         if (0.75d <= time && time < 1.8d)
                         {
-                            if (currentTime >= 40d / bpm)
+                            if (currentTime >= 42d / bpm)
                             {
                                 GameObjectNote();
-                                currentTime -= 40d / bpm;
+                                currentTime -= 42d / bpm;
                             }
                         }
-                        // 폼에 살고 죽고
-                        if (1.8d <= time && time < 1.915d)
+                        // 나 폼에 살고 죽고 폼 때문에 살고
+                        if (1.8d <= time && time < 2.2d) //if (1.8d <= time && time < 1.915d)
                         {
                             if (currentTime >= 36d / bpm)
                             {
@@ -740,48 +740,57 @@ public class NoteManager : MonoBehaviour
                             }
                         }
 
-                        if (1.915d <= time && time < 4d)
+                        if (2.2d <= time && time < 7d)
                         {
-                            if (currentTime >= 39.5d / bpm)
+                            if (currentTime >= 67.7d / bpm)
                             {
                                 GameObjectNote();
-                                currentTime -= 39.5d / bpm;
+                                currentTime -= 67.7d / bpm;
                             }
                         }
-                        // 폼 때문에 살고
-                        if (4d <= time && time < 7d)
+
+                        if (6d <= time && time < 7.6d)
                         {
                             if (currentTime >= 39.5d / bpm)
                             {
-                                GameObjectNote();
                                 currentTime -= 39.5d / bpm;
                             }
                         }
 
                         // 폼 하나에 죽고 살고
-                        if (7d <= time && time < 9d)
+                        if (7.6d <= time && time < 8d)
                         {
-                            if (currentTime >= 40d / bpm)
+                            if (currentTime >= 30d / bpm)
                             {
                                 GameObjectNote();
-                                currentTime -= 40d / bpm;
+                                currentTime -= 30d / bpm;
                             }
                         }
 
-                        if (9d <= time && time < 13d)
+                        //사나이가 가는 오 그 길에 길에
+                        if (8d <= time && time < 9d)
                         {
                             if (currentTime >= 40.5d / bpm)
                             {
-                                GameObjectNote();
                                 currentTime -= 40.5d / bpm;
                             }
                         }
-                        // 폼생폼사야 
-                        if (13d <= time && time < 16d)
+                        if (9d <= time && time < 14d)
                         {
                             if (currentTime >= 80d / bpm)
                             {
                                 GameObjectNote();
+                                currentTime -= 80d / bpm;
+                            }
+                        }
+
+
+                        // 폼생폼사야 
+
+                        if (14d <= time && time < 16d)
+                        {
+                            if (currentTime >= 80d / bpm)
+                            {
                                 currentTime -= 80d / bpm;
                             }
                         }
@@ -862,10 +871,10 @@ public class NoteManager : MonoBehaviour
                         {
                             if (currentTime >= 77d / bpm)
                             {
-                                GameObjectNote();
                                 currentTime -= 77d / bpm;
                             }
                         }
+
 
                         // 은지원
                         if (42d <= time && time < 43.5d)
@@ -909,7 +918,6 @@ public class NoteManager : MonoBehaviour
                         {
                             if (currentTime >= 79d / bpm)
                             {
-                                GameObjectNote();
                                 currentTime -= 79d / bpm;
                             }
                         }
@@ -985,7 +993,7 @@ public class NoteManager : MonoBehaviour
                         }
 
                         // 폼에 살고
-                        if (67.5d <= time && time < 73.3d)
+                        if (67.5d <= time && time < 69.3d)
                         {
                             if (currentTime >= 38d / bpm)
                             {
@@ -993,7 +1001,14 @@ public class NoteManager : MonoBehaviour
                                 currentTime -= 38d / bpm;
                             }
                         }
-                        if (73.3d <= time && time < 73.5d)
+                        if (69.3d <= time && time < 72d)
+                        {
+                            if (currentTime >= 50d / bpm)
+                            {
+                                currentTime -= 50d / bpm;
+                            }
+                        }
+                        if (72d <= time && time < 73.5d)
                         {
                             if (currentTime >= 50d / bpm)
                             {
@@ -1021,10 +1036,10 @@ public class NoteManager : MonoBehaviour
                         //맨몸으로 부딪쳤던 내 삶에 그까짓 이별쯤은 괜찮아
                         if (75.0d <= time && time < 75.3d)
                         {
-                            if (currentTime >= 20d / bpm)
+                            if (currentTime >= 23d / bpm)
                             {
                                 GameObjectNote();
-                                currentTime -= 20d / bpm;
+                                currentTime -= 23d / bpm;
                             }
                         }
                         if (75.3d <= time && time < 76d)
@@ -1036,20 +1051,20 @@ public class NoteManager : MonoBehaviour
                         }
                         if (76d <= time && time < 76.3d)
                         {
-                            if (currentTime >= 23d / bpm)
+                            if (currentTime >= 33d / bpm)
                             {
                                 GameObjectNote();
-                                currentTime -= 23d / bpm;
+                                currentTime -= 33d / bpm;
                             }
                         }
-                        if (76.3d <= time && time < 79d)
+                        if (76.3d <= time && time < 77d)
                         {
                             if (currentTime >= 50d / bpm)
                             {
                                 currentTime -= 50d / bpm;
                             }
                         }
-                        if (79d <= time && time < 82.6d)
+                        if (77d <= time && time < 80d)
                         {
                             if (currentTime >= 62d / bpm)
                             {
@@ -1059,7 +1074,7 @@ public class NoteManager : MonoBehaviour
                         }
 
                         // 마무리 결과창을 위한 출력
-                        if (83d < time)
+                        if (80d < time)
                         {
                             if (currentTime >= 500d / bpm)
                             {
