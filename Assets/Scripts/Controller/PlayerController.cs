@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        Debug.Log(input.Value*100);
         if (s_canPresskey)
         {
             // 매 프레임마다 스페이스바가 눌러진 지 확인
@@ -26,6 +27,12 @@ public class PlayerController : MonoBehaviour
             {
                 // 판정 체크
                 theTimingManager.CheckTiming();
+            }
+
+            if(input.Value*100 >= 52)
+            {
+                theTimingManager.CheckTiming();
+
             }
 
             if(Input.GetKeyDown(KeyCode.Escape))
@@ -44,10 +51,6 @@ public class PlayerController : MonoBehaviour
                 
             }
 
-            if(input.Value >= 1)
-            {
-                theTimingManager.CheckTiming();
-            }
         }
 
     }

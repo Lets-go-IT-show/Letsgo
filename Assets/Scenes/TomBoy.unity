@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2047,7 +2047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d379dadeaa40a94eb68af9351b8ad0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: {fileID: 2031110190}
+  input: {fileID: 1061094948}
 --- !u!4 &640249571
 Transform:
   m_ObjectHideFlags: 0
@@ -2264,7 +2264,7 @@ RectTransform:
   - {fileID: 76583941}
   - {fileID: 848842814}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2338,7 +2338,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &784717097
 GameObject:
@@ -2666,210 +2666,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954213138}
   m_CullTransparentMesh: 1
---- !u!1 &999481707
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 999481710}
-  - component: {fileID: 999481709}
-  - component: {fileID: 999481708}
-  m_Layer: 0
-  m_Name: Ardunity
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &999481708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999481707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 919922910c30f4f2da9ed21286f8cdbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  windowRect:
-    serializedVersion: 2
-    x: 6
-    y: 27
-    width: 102
-    height: 79
-  nodes:
-  - name: baudrate
-    text: 115200 bps
-    nodeType: 0
-    objectTarget: {fileID: 0}
-    tooltip: Serial Baudrate Speed
-    rect:
-      serializedVersion: 2
-      x: 6
-      y: 47
-      width: 102
-      height: 18
-    updated: 1
-  - name: CommSocket
-    text: CommSocket
-    nodeType: 1
-    objectTarget: {fileID: 0}
-    tooltip: CommSocket
-    rect:
-      serializedVersion: 2
-      x: 6
-      y: 65
-      width: 102
-      height: 18
-    updated: 1
-  - name: CommSerial
-    text: CommSerial
-    nodeType: 1
-    objectTarget: {fileID: 0}
-    tooltip: CommSerial
-    rect:
-      serializedVersion: 2
-      x: 6
-      y: 83
-      width: 102
-      height: 18
-    updated: 1
-  foundDevices:
-  - name: COM8
-    address: //./COM8
-    args: []
-  device:
-    name: COM8
-    address: //./COM8
-    args: []
-  OnOpen:
-    m_PersistentCalls:
-      m_Calls: []
-  OnClose:
-    m_PersistentCalls:
-      m_Calls: []
-  OnOpenFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  OnErrorClosed:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStartSearch:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStopSearch:
-    m_PersistentCalls:
-      m_Calls: []
-  OnWriteCompleted:
-    m_PersistentCalls:
-      m_Calls: []
-  OnFoundDevice:
-    m_PersistentCalls:
-      m_Calls: []
-  baudrate: 115200
-  dtrReset: 1
---- !u!114 &999481709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999481707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1389280112, guid: f6f400c45f7404b8785954fd9df78bec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  windowRect:
-    serializedVersion: 2
-    x: 147
-    y: 27
-    width: 119
-    height: 79
-  nodes:
-  - name: stream
-    text: Serial (115200 bps)
-    nodeType: 0
-    objectTarget: {fileID: 0}
-    tooltip: Arduino Stream Class
-    rect:
-      serializedVersion: 2
-      x: 147
-      y: 47
-      width: 119
-      height: 18
-    updated: 1
-  - name: CommSocket
-    text: CommSocket
-    nodeType: 2
-    objectTarget: {fileID: 999481708}
-    tooltip: CommSocket
-    rect:
-      serializedVersion: 2
-      x: 147
-      y: 65
-      width: 119
-      height: 18
-    updated: 1
-  - name: ArdunityApp
-    text: ArdunityApp
-    nodeType: 1
-    objectTarget: {fileID: 0}
-    tooltip: ArdunityApp
-    rect:
-      serializedVersion: 2
-      x: 147
-      y: 83
-      width: 119
-      height: 18
-    updated: 1
-  timeoutSec: 5
-  streamClass: 0
-  filterStream: 0
-  bypassStream: 0
-  baudrate: 115200
-  rxPin: 0
-  txPin: 0
-  bypassBaudrate: 115200
-  bypassRxPin: 0
-  bypassTxPin: 0
-  tcpPort: 0
-  pwmResolution: 256
-  adcResolution: 1024
-  autoConnect: 1
-  debug: 0
-  OnConnected:
-    m_PersistentCalls:
-      m_Calls: []
-  OnConnectionFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  OnDisconnected:
-    m_PersistentCalls:
-      m_Calls: []
-  OnLostConnection:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!4 &999481710
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999481707}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2031110188}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1048172829
 GameObject:
   m_ObjectHideFlags: 0
@@ -2994,6 +2790,212 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048172829}
   m_CullTransparentMesh: 1
+--- !u!1 &1061094945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1061094946}
+  - component: {fileID: 1061094948}
+  - component: {fileID: 1061094947}
+  m_Layer: 0
+  m_Name: TouchSensor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1061094946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061094945}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1734897444}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1061094947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061094945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60e3904a9df024b7d901a8761307307b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windowRect:
+    serializedVersion: 2
+    x: 436
+    y: 255
+    width: 112
+    height: 97
+  nodes:
+  - name: input
+    text: Input
+    nodeType: 2
+    objectTarget: {fileID: 1061094948}
+    tooltip: IWireInput<float>
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 275
+      width: 112
+      height: 18
+    updated: 1
+  - name: impulse
+    text: Impulse
+    nodeType: 1
+    objectTarget: {fileID: 0}
+    tooltip: Input<float>
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 293
+      width: 112
+      height: 18
+    updated: 1
+  - name: trigger
+    text: Trigger
+    nodeType: 1
+    objectTarget: {fileID: 0}
+    tooltip: Input<Trigger>
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 311
+      width: 112
+      height: 18
+    updated: 1
+  - name: ImpulseInput
+    text: ImpulseInput
+    nodeType: 1
+    objectTarget: {fileID: 0}
+    tooltip: ImpulseInput
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 329
+      width: 112
+      height: 18
+    updated: 1
+  threshold: 0.036
+  delayTime: 0.01
+  clearTime: 1
+  impulseMode: 2
+  invert: 0
+  OnTriggerShot:
+    m_PersistentCalls:
+      m_Calls: []
+  OnImpulseShot:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1061094948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061094945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b91bae1ae651e43aca6c8036104e86ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windowRect:
+    serializedVersion: 2
+    x: 493
+    y: 60
+    width: 105
+    height: 133
+  nodes:
+  - name: gameObject
+    text: TouchSensor
+    nodeType: 0
+    objectTarget: {fileID: 0}
+    tooltip: GameObject
+    rect:
+      serializedVersion: 2
+      x: 493
+      y: 80
+      width: 105
+      height: 18
+    updated: 1
+  - name: id
+    text: 'ID: 0'
+    nodeType: 0
+    objectTarget: {fileID: 0}
+    tooltip: Controller ID
+    rect:
+      serializedVersion: 2
+      x: 493
+      y: 98
+      width: 105
+      height: 18
+    updated: 1
+  - name: pin
+    text: 'Pin: A2'
+    nodeType: 0
+    objectTarget: {fileID: 0}
+    tooltip: Arduino Analog Pin
+    rect:
+      serializedVersion: 2
+      x: 493
+      y: 116
+      width: 105
+      height: 18
+    updated: 1
+  - name: owner
+    text: Owner
+    nodeType: 2
+    objectTarget: {fileID: 1734897443}
+    tooltip: ArdunityApp
+    rect:
+      serializedVersion: 2
+      x: 493
+      y: 134
+      width: 105
+      height: 18
+    updated: 1
+  - name: Value
+    text: Value
+    nodeType: 1
+    objectTarget: {fileID: 0}
+    tooltip: Input<float>
+    rect:
+      serializedVersion: 2
+      x: 493
+      y: 152
+      width: 105
+      height: 18
+    updated: 1
+  - name: AnalogInput
+    text: AnalogInput
+    nodeType: 1
+    objectTarget: {fileID: 0}
+    tooltip: AnalogInput
+    rect:
+      serializedVersion: 2
+      x: 493
+      y: 170
+      width: 105
+      height: 18
+    updated: 1
+  id: 0
+  pin: 2
+  OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1070068276
 GameObject:
   m_ObjectHideFlags: 0
@@ -3058,7 +3060,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1083446688
 GameObject:
@@ -3332,7 +3334,7 @@ Transform:
   m_LocalScale: {x: 1.0691155, y: 1.0866051, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1240397535
 GameObject:
@@ -4754,6 +4756,213 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1643842978}
   m_CullTransparentMesh: 1
+--- !u!1 &1734897441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1734897444}
+  - component: {fileID: 1734897443}
+  - component: {fileID: 1734897442}
+  m_Layer: 0
+  m_Name: Ardunity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1734897442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734897441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 919922910c30f4f2da9ed21286f8cdbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windowRect:
+    serializedVersion: 2
+    x: 12
+    y: 37
+    width: 113
+    height: 79
+  nodes:
+  - name: baudrate
+    text: 115200 bps
+    nodeType: 0
+    objectTarget: {fileID: 0}
+    tooltip: Serial Baudrate Speed
+    rect:
+      serializedVersion: 2
+      x: 12
+      y: 57
+      width: 113
+      height: 18
+    updated: 1
+  - name: CommSocket
+    text: CommSocket
+    nodeType: 1
+    objectTarget: {fileID: 0}
+    tooltip: CommSocket
+    rect:
+      serializedVersion: 2
+      x: 12
+      y: 75
+      width: 113
+      height: 18
+    updated: 1
+  - name: CommSerial
+    text: CommSerial
+    nodeType: 1
+    objectTarget: {fileID: 0}
+    tooltip: CommSerial
+    rect:
+      serializedVersion: 2
+      x: 12
+      y: 93
+      width: 113
+      height: 18
+    updated: 1
+  foundDevices:
+  - name: COM1
+    address: //./COM1
+    args: []
+  - name: COM4
+    address: //./COM4
+    args: []
+  device:
+    name: COM4
+    address: //./COM4
+    args: []
+  OnOpen:
+    m_PersistentCalls:
+      m_Calls: []
+  OnClose:
+    m_PersistentCalls:
+      m_Calls: []
+  OnOpenFailed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnErrorClosed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStartSearch:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStopSearch:
+    m_PersistentCalls:
+      m_Calls: []
+  OnWriteCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFoundDevice:
+    m_PersistentCalls:
+      m_Calls: []
+  baudrate: 115200
+  dtrReset: 1
+--- !u!114 &1734897443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734897441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1389280112, guid: f6f400c45f7404b8785954fd9df78bec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windowRect:
+    serializedVersion: 2
+    x: 263
+    y: 23
+    width: 126
+    height: 79
+  nodes:
+  - name: stream
+    text: Serial (115200 bps)
+    nodeType: 0
+    objectTarget: {fileID: 0}
+    tooltip: Arduino Stream Class
+    rect:
+      serializedVersion: 2
+      x: 263
+      y: 43
+      width: 126
+      height: 18
+    updated: 1
+  - name: CommSocket
+    text: CommSocket
+    nodeType: 2
+    objectTarget: {fileID: 1734897442}
+    tooltip: CommSocket
+    rect:
+      serializedVersion: 2
+      x: 263
+      y: 61
+      width: 126
+      height: 18
+    updated: 1
+  - name: ArdunityApp
+    text: ArdunityApp
+    nodeType: 1
+    objectTarget: {fileID: 0}
+    tooltip: ArdunityApp
+    rect:
+      serializedVersion: 2
+      x: 263
+      y: 79
+      width: 126
+      height: 18
+    updated: 1
+  timeoutSec: 5
+  streamClass: 0
+  filterStream: 0
+  bypassStream: 0
+  baudrate: 115200
+  rxPin: 0
+  txPin: 0
+  bypassBaudrate: 115200
+  bypassRxPin: 0
+  bypassTxPin: 0
+  tcpPort: 0
+  pwmResolution: 256
+  adcResolution: 1024
+  autoConnect: 1
+  debug: 0
+  OnConnected:
+    m_PersistentCalls:
+      m_Calls: []
+  OnConnectionFailed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDisconnected:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLostConnection:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1734897444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734897441}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1061094946}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1735683505
 GameObject:
   m_ObjectHideFlags: 0
@@ -4880,7 +5089,7 @@ Transform:
   - {fileID: 1543384263}
   - {fileID: 1370094067}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1838666350
 GameObject:
@@ -5243,212 +5452,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949857220}
   m_CullTransparentMesh: 1
---- !u!1 &2031110187
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2031110188}
-  - component: {fileID: 2031110190}
-  - component: {fileID: 2031110189}
-  m_Layer: 0
-  m_Name: TouchSensor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2031110188
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2031110187}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 999481710}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2031110189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2031110187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60e3904a9df024b7d901a8761307307b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  windowRect:
-    serializedVersion: 2
-    x: 438
-    y: 37
-    width: 102
-    height: 97
-  nodes:
-  - name: input
-    text: Input
-    nodeType: 2
-    objectTarget: {fileID: 2031110190}
-    tooltip: IWireInput<float>
-    rect:
-      serializedVersion: 2
-      x: 438
-      y: 57
-      width: 102
-      height: 18
-    updated: 1
-  - name: impulse
-    text: Impulse
-    nodeType: 1
-    objectTarget: {fileID: 0}
-    tooltip: Input<float>
-    rect:
-      serializedVersion: 2
-      x: 438
-      y: 75
-      width: 102
-      height: 18
-    updated: 1
-  - name: trigger
-    text: Trigger
-    nodeType: 1
-    objectTarget: {fileID: 0}
-    tooltip: Input<Trigger>
-    rect:
-      serializedVersion: 2
-      x: 438
-      y: 93
-      width: 102
-      height: 18
-    updated: 1
-  - name: ImpulseInput
-    text: ImpulseInput
-    nodeType: 1
-    objectTarget: {fileID: 0}
-    tooltip: ImpulseInput
-    rect:
-      serializedVersion: 2
-      x: 438
-      y: 111
-      width: 102
-      height: 18
-    updated: 1
-  threshold: 0.01
-  delayTime: 0.1
-  clearTime: 1
-  impulseMode: 0
-  invert: 0
-  OnTriggerShot:
-    m_PersistentCalls:
-      m_Calls: []
-  OnImpulseShot:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &2031110190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2031110187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b91bae1ae651e43aca6c8036104e86ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  windowRect:
-    serializedVersion: 2
-    x: 300
-    y: 27
-    width: 98
-    height: 133
-  nodes:
-  - name: gameObject
-    text: PiezoSensor
-    nodeType: 0
-    objectTarget: {fileID: 0}
-    tooltip: GameObject
-    rect:
-      serializedVersion: 2
-      x: 300
-      y: 47
-      width: 98
-      height: 18
-    updated: 1
-  - name: id
-    text: 'ID: 0'
-    nodeType: 0
-    objectTarget: {fileID: 0}
-    tooltip: Controller ID
-    rect:
-      serializedVersion: 2
-      x: 300
-      y: 65
-      width: 98
-      height: 18
-    updated: 1
-  - name: pin
-    text: 'Pin: A0'
-    nodeType: 0
-    objectTarget: {fileID: 0}
-    tooltip: Arduino Analog Pin
-    rect:
-      serializedVersion: 2
-      x: 300
-      y: 83
-      width: 98
-      height: 18
-    updated: 1
-  - name: owner
-    text: Owner
-    nodeType: 2
-    objectTarget: {fileID: 999481709}
-    tooltip: ArdunityApp
-    rect:
-      serializedVersion: 2
-      x: 300
-      y: 101
-      width: 98
-      height: 18
-    updated: 1
-  - name: Value
-    text: Value
-    nodeType: 1
-    objectTarget: {fileID: 0}
-    tooltip: Input<float>
-    rect:
-      serializedVersion: 2
-      x: 300
-      y: 119
-      width: 98
-      height: 18
-    updated: 1
-  - name: AnalogInput
-    text: AnalogInput
-    nodeType: 1
-    objectTarget: {fileID: 0}
-    tooltip: AnalogInput
-    rect:
-      serializedVersion: 2
-      x: 300
-      y: 137
-      width: 98
-      height: 18
-    updated: 1
-  id: 0
-  pin: 0
-  OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &2031488740
 GameObject:
   m_ObjectHideFlags: 0

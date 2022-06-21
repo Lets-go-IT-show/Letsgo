@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -635,9 +635,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   windowRect:
     serializedVersion: 2
-    x: 6
-    y: 27
-    width: 102
+    x: 12
+    y: 37
+    width: 113
     height: 79
   nodes:
   - name: baudrate
@@ -647,9 +647,9 @@ MonoBehaviour:
     tooltip: Serial Baudrate Speed
     rect:
       serializedVersion: 2
-      x: 6
-      y: 47
-      width: 102
+      x: 12
+      y: 57
+      width: 113
       height: 18
     updated: 1
   - name: CommSocket
@@ -659,9 +659,9 @@ MonoBehaviour:
     tooltip: CommSocket
     rect:
       serializedVersion: 2
-      x: 6
-      y: 65
-      width: 102
+      x: 12
+      y: 75
+      width: 113
       height: 18
     updated: 1
   - name: CommSerial
@@ -671,18 +671,21 @@ MonoBehaviour:
     tooltip: CommSerial
     rect:
       serializedVersion: 2
-      x: 6
-      y: 83
-      width: 102
+      x: 12
+      y: 93
+      width: 113
       height: 18
     updated: 1
   foundDevices:
-  - name: COM8
-    address: //./COM8
+  - name: COM1
+    address: //./COM1
+    args: []
+  - name: COM4
+    address: //./COM4
     args: []
   device:
-    name: COM8
-    address: //./COM8
+    name: COM4
+    address: //./COM4
     args: []
   OnOpen:
     m_PersistentCalls:
@@ -724,9 +727,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   windowRect:
     serializedVersion: 2
-    x: 147
-    y: 27
-    width: 119
+    x: 263
+    y: 23
+    width: 126
     height: 79
   nodes:
   - name: stream
@@ -736,9 +739,9 @@ MonoBehaviour:
     tooltip: Arduino Stream Class
     rect:
       serializedVersion: 2
-      x: 147
-      y: 47
-      width: 119
+      x: 263
+      y: 43
+      width: 126
       height: 18
     updated: 1
   - name: CommSocket
@@ -748,9 +751,9 @@ MonoBehaviour:
     tooltip: CommSocket
     rect:
       serializedVersion: 2
-      x: 147
-      y: 65
-      width: 119
+      x: 263
+      y: 61
+      width: 126
       height: 18
     updated: 1
   - name: ArdunityApp
@@ -760,9 +763,9 @@ MonoBehaviour:
     tooltip: ArdunityApp
     rect:
       serializedVersion: 2
-      x: 147
-      y: 83
-      width: 119
+      x: 263
+      y: 79
+      width: 126
       height: 18
     updated: 1
   timeoutSec: 5
@@ -2083,9 +2086,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   windowRect:
     serializedVersion: 2
-    x: 438
-    y: 37
-    width: 102
+    x: 436
+    y: 255
+    width: 112
     height: 97
   nodes:
   - name: input
@@ -2095,9 +2098,9 @@ MonoBehaviour:
     tooltip: IWireInput<float>
     rect:
       serializedVersion: 2
-      x: 438
-      y: 57
-      width: 102
+      x: 436
+      y: 275
+      width: 112
       height: 18
     updated: 1
   - name: impulse
@@ -2107,9 +2110,9 @@ MonoBehaviour:
     tooltip: Input<float>
     rect:
       serializedVersion: 2
-      x: 438
-      y: 75
-      width: 102
+      x: 436
+      y: 293
+      width: 112
       height: 18
     updated: 1
   - name: trigger
@@ -2119,9 +2122,9 @@ MonoBehaviour:
     tooltip: Input<Trigger>
     rect:
       serializedVersion: 2
-      x: 438
-      y: 93
-      width: 102
+      x: 436
+      y: 311
+      width: 112
       height: 18
     updated: 1
   - name: ImpulseInput
@@ -2131,15 +2134,15 @@ MonoBehaviour:
     tooltip: ImpulseInput
     rect:
       serializedVersion: 2
-      x: 438
-      y: 111
-      width: 102
+      x: 436
+      y: 329
+      width: 112
       height: 18
     updated: 1
-  threshold: 0.01
-  delayTime: 0.1
+  threshold: 0.036
+  delayTime: 0.01
   clearTime: 1
-  impulseMode: 0
+  impulseMode: 2
   invert: 0
   OnTriggerShot:
     m_PersistentCalls:
@@ -2161,21 +2164,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   windowRect:
     serializedVersion: 2
-    x: 300
-    y: 27
-    width: 98
+    x: 493
+    y: 60
+    width: 105
     height: 133
   nodes:
   - name: gameObject
-    text: PiezoSensor
+    text: TouchSensor
     nodeType: 0
     objectTarget: {fileID: 0}
     tooltip: GameObject
     rect:
       serializedVersion: 2
-      x: 300
-      y: 47
-      width: 98
+      x: 493
+      y: 80
+      width: 105
       height: 18
     updated: 1
   - name: id
@@ -2185,21 +2188,21 @@ MonoBehaviour:
     tooltip: Controller ID
     rect:
       serializedVersion: 2
-      x: 300
-      y: 65
-      width: 98
+      x: 493
+      y: 98
+      width: 105
       height: 18
     updated: 1
   - name: pin
-    text: 'Pin: A0'
+    text: 'Pin: A2'
     nodeType: 0
     objectTarget: {fileID: 0}
     tooltip: Arduino Analog Pin
     rect:
       serializedVersion: 2
-      x: 300
-      y: 83
-      width: 98
+      x: 493
+      y: 116
+      width: 105
       height: 18
     updated: 1
   - name: owner
@@ -2209,9 +2212,9 @@ MonoBehaviour:
     tooltip: ArdunityApp
     rect:
       serializedVersion: 2
-      x: 300
-      y: 101
-      width: 98
+      x: 493
+      y: 134
+      width: 105
       height: 18
     updated: 1
   - name: Value
@@ -2221,9 +2224,9 @@ MonoBehaviour:
     tooltip: Input<float>
     rect:
       serializedVersion: 2
-      x: 300
-      y: 119
-      width: 98
+      x: 493
+      y: 152
+      width: 105
       height: 18
     updated: 1
   - name: AnalogInput
@@ -2233,13 +2236,13 @@ MonoBehaviour:
     tooltip: AnalogInput
     rect:
       serializedVersion: 2
-      x: 300
-      y: 137
-      width: 98
+      x: 493
+      y: 170
+      width: 105
       height: 18
     updated: 1
   id: 0
-  pin: 0
+  pin: 2
   OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
