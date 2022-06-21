@@ -842,7 +842,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 589668077}
-        m_MethodName: ChooseMusic
+        m_MethodName: GameName
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
