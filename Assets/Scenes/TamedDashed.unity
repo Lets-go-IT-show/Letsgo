@@ -1992,6 +1992,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1660195033}
+        m_MethodName: PlaySFX
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Mario
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &630764038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4066,6 +4077,8 @@ MonoBehaviour:
   sfx:
   - name: Clap
     clip: {fileID: 8300000, guid: 1e1308666e0ec4e4496640c97197d765, type: 3}
+  - name: Mario
+    clip: {fileID: 8300000, guid: ac9b7f386fb34a04a9cf6e51d0d1b312, type: 3}
   bgm:
   - name: TamedDashed
     clip: {fileID: 8300000, guid: 37da1970c1921fc47a75c1b260d66d29, type: 3}
@@ -5935,6 +5948,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1660195033}
+        m_MethodName: PlaySFX
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Mario
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &2004838574

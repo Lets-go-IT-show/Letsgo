@@ -78,10 +78,10 @@ public class Main : MonoBehaviour
         SceneManager.LoadScene("Thewaythisguylives");
     }
 
-    public void SelectMusic()
+    public void InvokeTime()
     {
-
-
+        AudioManager.instance.PlaySFX("clap");
+        Invoke("PlayBtn", 0.5f);
     }
 
 }
