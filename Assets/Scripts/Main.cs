@@ -78,4 +78,10 @@ public class Main : MonoBehaviour
         SceneManager.LoadScene("Thewaythisguylives");
     }
 
+    public void SelectMusic()
+    {
+
+
+    }
+
 }

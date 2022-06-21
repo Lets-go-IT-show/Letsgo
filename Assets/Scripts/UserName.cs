@@ -28,7 +28,19 @@ public class UserName : MonoBehaviour
         else
         {
             Debug.Log("이름 뭐로 찍히나 : " + username);
-            ChooseMusic();
+
+            if (MusicChoice.musicIndex == 0)
+            {
+                SceneManager.LoadScene("TamedDashed");
+            }
+            else if (MusicChoice.musicIndex == 1)
+            {
+                SceneManager.LoadScene("TomBoy");
+            }
+            else if (MusicChoice.musicIndex == 2)
+            {
+                SceneManager.LoadScene("Thewaythisguylives");
+            }
         }
 
         Debug.Log("start : " + username);
