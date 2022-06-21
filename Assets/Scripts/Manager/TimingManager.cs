@@ -66,6 +66,7 @@ public class TimingManager : MonoBehaviour
             {
                 if (timingBoxs[x].x <= t_notePosX && t_notePosX <= timingBoxs[x].y)
                 {
+                    Debug.Log("hit : " + x);
                     // *노트 제거
                     // 노트의 이미지만 없애고 파괴되지 않도록 설정
                     boxNoteList[i].GetComponent<Note>().HideNote();
@@ -73,7 +74,7 @@ public class TimingManager : MonoBehaviour
 
                     // *이펙트 연출
                     // 연출재생 조건 : 0: Perfect, 1: Cool, 2:Good, 3: Bad
-                    if (x < timingBoxs.Length - 1)
+                    if (x < timingBoxs.Length - 2)
                         theEffect.NoteHitEffect();
 
                     // Perfect가 아니면 콤보 초기화
@@ -96,8 +97,8 @@ public class TimingManager : MonoBehaviour
         // miss 뜨는 위치에 combo reset
         theComboManager.ResetCombo();
 
-        // timingBoxs의 배열 개수는 4이므로 length를 이용
-        theEffect.JudgementEffect(timingBoxs.Length);
+        // timingBoxs의 배열 개수는 5이므로 length를 이용
+        //theEffect.JudgementEffect(timingBoxs.Length);
         MissRecord();
     }
 
