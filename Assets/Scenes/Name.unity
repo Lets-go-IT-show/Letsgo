@@ -618,7 +618,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2035333709}
-        m_MethodName: Start
+        m_MethodName: btnNextOnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1242,4 +1242,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputname: {fileID: 924111700}
-  alertmessage: {fileID: 0}
+  alertmessage: {fileID: 1723952870}
