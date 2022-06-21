@@ -13,6 +13,9 @@ public class TextCtrl : MonoBehaviour
     public Text LoveDive_Rank = null;
     public Text Tamed_Rank = null;
     public Text WiIng_Rank = null;
+    public Text LoveDive_Rank_Score = null;
+    public Text Tamed_Rank_Score = null;
+    public Text WiIng_Rank_Score = null;
 
     /*void Update()
     {
@@ -77,20 +80,24 @@ public class TextCtrl : MonoBehaviour
                     if (item.music == "TomBoy" && cnt[0] < 5)
                     {
                         if (item.name.Length >= 6) userName = userName.Substring(0,5) + "...";
-                        LoveDive_Rank.text += userName + "      "+ item.score + "점\n\n";
-                        cnt[0]++;
+                        // LoveDive_Rank.text += userName + "      "+ item.score + "점\n\n";
+                            LoveDive_Rank.text += userName + "\n\n";
+                            LoveDive_Rank_Score.text += item.score + "점\n\n";
+                            cnt[0]++;
                     }
                     else if (item.music == "TamedDashed" && cnt[1] < 5)
                     {
                         if (item.name.Length >= 6) userName = userName.Substring(6)+"...";
-                        Tamed_Rank.text += userName + "      " + item.score + "점\n\n";
-                        cnt[1]++;
+                            Tamed_Rank.text += userName + "\n\n";
+                            Tamed_Rank_Score.text += item.score + "점\n\n";
+                            cnt[1]++;
                     }
                     else if (item.music == "폼생폼사" && cnt[2] < 5)
                     {
                         if (item.name.Length >= 6) userName = userName.Substring(6) + "...";
-                        WiIng_Rank.text += userName + "      " + item.score + "점\n\n";
-                        cnt[2]++;
+                            WiIng_Rank.text += userName + "\n\n";
+                            WiIng_Rank_Score.text += item.score + "점\n\n";
+                            cnt[2]++;
                     }
                 }
             }
