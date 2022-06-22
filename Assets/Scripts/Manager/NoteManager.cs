@@ -1108,6 +1108,10 @@ public class NoteManager : MonoBehaviour
                     }
                 }
                 break;
+            case 3:
+                {
+
+                }break;
             default: break;
         }
     }

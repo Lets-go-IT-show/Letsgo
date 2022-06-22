@@ -400,7 +400,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC81D\uC2A4\uD0A4\uC2A4 - \uD3FC\uC0DD\uD3FC\uC0AC"
+  m_Text: "\uC81D\uC2A4\uD0A4\uC2A4 - \uD3FC\uC0DD\uD3FC\uC0AC(\uC26C\uC6B4)"
 --- !u!222 &120948832
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -490,6 +490,17 @@ MonoBehaviour:
       - m_Target: {fileID: 378838472}
         m_MethodName: GameName
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1190179365}
+        m_MethodName: PlaySFX
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1301,7 +1312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e3ca28b51b1acc43b4a9102b98fdfe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goUI: {fileID: 47463469}
+  goUI: {fileID: 0}
 --- !u!114 &378838471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1314,7 +1325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa0b91fc16ccb9146b335237be2ac4f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goUI: {fileID: 1648786217}
+  goUI: {fileID: 0}
 --- !u!114 &378838472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5069,6 +5080,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1190179365}
+        m_MethodName: PlaySFX
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1732206061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5185,6 +5207,17 @@ MonoBehaviour:
       - m_Target: {fileID: 378838472}
         m_MethodName: Menu
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1190179365}
+        m_MethodName: PlaySFX
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5455,6 +5488,17 @@ MonoBehaviour:
       - m_Target: {fileID: 378838471}
         m_MethodName: noteStart
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1190179365}
+        m_MethodName: PlaySFX
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

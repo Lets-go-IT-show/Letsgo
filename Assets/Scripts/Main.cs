@@ -73,14 +73,18 @@ public class Main : MonoBehaviour
         SceneManager.LoadScene("TamedDashed");
     }
 
-    public void Thewaythisguylives()
+    public void ThewaythisguylivesEasy()
     {
-        SceneManager.LoadScene("Thewaythisguylives");
+        SceneManager.LoadScene("Thewaythisguylives_Easy");
+    }
+    public void ThewaythisguylivesDifficult()
+    {
+        SceneManager.LoadScene("Thewaythisguylives_Difficult");
     }
 
     public void ThewaythisguylivesLevel()
     {
-        SceneManager.LoadScene("level");
+        SceneManager.LoadScene("ThewaythisguylivesLevel");
     }
 
     public void InvokeTime()

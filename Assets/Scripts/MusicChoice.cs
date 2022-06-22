@@ -30,6 +30,13 @@ public class MusicChoice : MonoBehaviour
     {
         musicIndex = 2;
         musicName = "폼생폼사";
-        Debug.Log("폼생폼사호출 : " + musicName);
+        Debug.Log("폼생폼사호출 어려운: " + musicName);
+    }
+
+    public void Music04()
+    {
+        musicIndex = 3;
+        musicName = "폼생폼사";
+        Debug.Log("폼생폼사호출 쉬운: " + musicName);
     }
 }
