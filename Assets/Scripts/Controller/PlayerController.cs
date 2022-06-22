@@ -1,6 +1,7 @@
 ﻿using Ardunity;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO.Ports;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -10,16 +11,27 @@ public class PlayerController : MonoBehaviour
     public static bool pause = false;
     TimingManager theTimingManager;
 
+    SerialPort serial;
     public AnalogInput input;
     void Start()
     {
         // 스페이스바가 눌리면 타이밍 판정을 할 수 있도록
         theTimingManager = FindObjectOfType<TimingManager>();
 
+        serial = new SerialPort("COM3", 115200);
+        serial.Open();
+        Debug.Log(serial.IsOpen);
     }
     void Update()
     {
-        Debug.Log(input.Value*100);
+        if (serial.IsOpen)
+        {
+            if (int.Parse(serial.ReadLine()) >= 20)
+            {
+                theTimingManager.CheckTiming();
+            }
+        }
+
         if (s_canPresskey)
         {
             // 매 프레임마다 스페이스바가 눌러진 지 확인
@@ -27,12 +39,6 @@ public class PlayerController : MonoBehaviour
             {
                 // 판정 체크
                 theTimingManager.CheckTiming();
-            }
-
-            if(input.Value*100 >= 52)
-            {
-                theTimingManager.CheckTiming();
-
             }
 
             if(Input.GetKeyDown(KeyCode.Escape))
