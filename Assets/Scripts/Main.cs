@@ -78,6 +78,11 @@ public class Main : MonoBehaviour
         SceneManager.LoadScene("Thewaythisguylives");
     }
 
+    public void ThewaythisguylivesLevel()
+    {
+        SceneManager.LoadScene("level");
+    }
+
     public void InvokeTime()
     {
         AudioManager.instance.PlaySFX("clap");

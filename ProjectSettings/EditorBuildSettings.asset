@@ -17,9 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Name.unity
     guid: ad77b04c85215804090caa48fcc84200
-  - enabled: 1
-    path: Assets/Scenes/Play.unity
-    guid: e521a5fea09e67542a4221bacdd1a351
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Rank.unity
     guid: be13f7368cf5a6040b2605ab4d2c219b
@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/level.unity
+    guid: 25fba573da6544643ac3949317e7cea1
   - enabled: 1
     path: Assets/Scenes/TamedDashed.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab

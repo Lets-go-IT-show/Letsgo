@@ -1584,7 +1584,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293071788}
-        m_MethodName: Thewaythisguylives
+        m_MethodName: ThewaythisguylivesLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1604,7 +1604,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 426757817}
         m_MethodName: PlaySFX
         m_Mode: 5
