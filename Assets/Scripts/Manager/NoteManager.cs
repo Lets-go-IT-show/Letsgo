@@ -917,7 +917,7 @@ public class NoteManager : MonoBehaviour
                             }
                         }
 
-                        if (51.5d <= time && time < 52d)
+                        if (51.5d <= time && time < 52.5d)
                         {
                             if (currentTime >= 79d / bpm)
                             {
@@ -925,17 +925,17 @@ public class NoteManager : MonoBehaviour
                             }
                         }
 
-                        if (52d <= time && time < 54.6d)
+                        if (52.8d <= time && time < 54.6d)
                         {
-                            if (currentTime >= 52d / bpm)
+                            if (currentTime >= 53d / bpm)
                             {
                                 GameObjectNote();
-                                currentTime -= 52d / bpm;
+                                currentTime -= 53d / bpm;
                             }
                         }
 
                         // 그저 안녕이란
-                        /*if (54.6d <= time && time < 57.7d)
+                        if (54.6d <= time && time < 57.7d)
                         {
                             if (currentTime >= 79d / bpm)
                             {
@@ -1094,7 +1094,7 @@ public class NoteManager : MonoBehaviour
                                 GameObjectNote();
                                 currentTime -= 500d / bpm;
                             }
-                        }*/
+                        }
 
                         //이대로 무너지면 절대로 안돼
                         /*if (80.6d <= time && time < 82d)
