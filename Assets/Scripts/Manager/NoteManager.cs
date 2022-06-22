@@ -713,7 +713,9 @@ public class NoteManager : MonoBehaviour
                         time += Time.deltaTime;
                         // 1초의 1씩 증가
                         currentTime += Time.deltaTime;
-
+                        
+                        // 빠른 버전
+                        
                         if (time < 0.75d)
                         {
                             if (currentTime >= 40d / bpm)
@@ -877,6 +879,7 @@ public class NoteManager : MonoBehaviour
 
 
                         // 은지원
+                        // 기가 막혀
                         if (42d <= time && time < 43.5d)
                         {
                             if (currentTime >= 39d / bpm)
@@ -914,7 +917,7 @@ public class NoteManager : MonoBehaviour
                             }
                         }
 
-                        if (51.5d <= time && time < 54.6d)
+                        if (51.5d <= time && time < 52d)
                         {
                             if (currentTime >= 79d / bpm)
                             {
@@ -922,8 +925,17 @@ public class NoteManager : MonoBehaviour
                             }
                         }
 
+                        if (52d <= time && time < 54.6d)
+                        {
+                            if (currentTime >= 52d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 52d / bpm;
+                            }
+                        }
+
                         // 그저 안녕이란
-                        if (54.6d <= time && time < 57.7d)
+                        /*if (54.6d <= time && time < 57.7d)
                         {
                             if (currentTime >= 79d / bpm)
                             {
@@ -932,6 +944,7 @@ public class NoteManager : MonoBehaviour
                             }
                         }
 
+                        
                         if (57.7d <= time && time < 57.9d)
                         {
                             if (currentTime >= 50d / bpm)
@@ -1064,7 +1077,7 @@ public class NoteManager : MonoBehaviour
                                 currentTime -= 50d / bpm;
                             }
                         }
-                        if (77d <= time && time < 80d)
+                        if (77d <= time && time < 79d)
                         {
                             if (currentTime >= 62d / bpm)
                             {
@@ -1081,7 +1094,7 @@ public class NoteManager : MonoBehaviour
                                 GameObjectNote();
                                 currentTime -= 500d / bpm;
                             }
-                        }
+                        }*/
 
                         //이대로 무너지면 절대로 안돼
                         /*if (80.6d <= time && time < 82d)
