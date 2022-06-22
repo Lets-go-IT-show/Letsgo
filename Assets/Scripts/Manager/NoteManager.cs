@@ -1110,8 +1110,411 @@ public class NoteManager : MonoBehaviour
                 break;
             case 3:
                 {
+                    if (noteActive)
+                    {
+                        time += Time.deltaTime;
+                        // 1초의 1씩 증가
+                        currentTime += Time.deltaTime;
 
-                }break;
+                        // 빠른 버전
+
+                        if (time < 0.75d)
+                        {
+                            if (currentTime >= 40d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 40d / bpm;
+                            }
+                        }
+
+                        if (0.75d <= time && time < 1.8d)
+                        {
+                            if (currentTime >= 42d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 42d / bpm;
+                            }
+                        }
+                        // 나 폼에 살고 죽고 폼 때문에 살고
+                        if (1.8d <= time && time < 2.2d) //if (1.8d <= time && time < 1.915d)
+                        {
+                            if (currentTime >= 36d / bpm)
+                            {
+                                currentTime -= 36d / bpm;
+                            }
+                        }
+
+                        if (2.2d <= time && time < 7d)
+                        {
+                            if (currentTime >= 67.7d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 67.7d / bpm;
+                            }
+                        }
+
+                        if (6d <= time && time < 7.6d)
+                        {
+                            if (currentTime >= 39.5d / bpm)
+                            {
+                                currentTime -= 39.5d / bpm;
+                            }
+                        }
+
+                        // 폼 하나에 죽고 살고
+                        if (7.6d <= time && time < 8d)
+                        {
+                            if (currentTime >= 30d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 30d / bpm;
+                            }
+                        }
+
+                        //사나이가 가는 오 그 길에 길에
+                        if (8d <= time && time < 9d)
+                        {
+                            if (currentTime >= 40.5d / bpm)
+                            {
+                                currentTime -= 40.5d / bpm;
+                            }
+                        }
+                        if (9d <= time && time < 14d)
+                        {
+                            if (currentTime >= 80d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 80d / bpm;
+                            }
+                        }
+
+
+                        // 폼생폼사야 
+
+                        if (14d <= time && time < 16d)
+                        {
+                            if (currentTime >= 80d / bpm)
+                            {
+                                currentTime -= 80d / bpm;
+                            }
+                        }
+
+                        // 사나이 가는 길은
+                        if (16d <= time && time < 25d)
+                        {
+                            if (currentTime >= 80d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 80d / bpm;
+                            }
+                        }
+                        // 없을꺼야
+                        if (25d <= time && time < 26.5d)
+                        {
+                            if (currentTime >= 80d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 80d / bpm;
+                            }
+                        }
+
+                        if (26.5d <= time && time < 26.8d)
+                        {
+                            if (currentTime >= 55d / bpm)
+                            {
+                                currentTime -= 55d / bpm;
+                            }
+                        }
+                        // 같아도 까지            
+                        if (26.8d <= time && time < 34d)
+                        {
+                            if (currentTime >= 80d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 80d / bpm;
+                            }
+                        }
+
+                        if (34d <= time && time < 37.5d)
+                        {
+                            if (currentTime >= 80d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 80d / bpm;
+                            }
+                        }
+                        // 보내줬지?
+                        if (37.5d <= time && time < 38.3d)
+                        {
+                            if (currentTime >= 65d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 65d / bpm;
+                            }
+                        }
+
+
+                        if (38.3d <= time && time < 38.53d)
+                        {
+                            if (currentTime >= 50d / bpm)
+                            {
+                                currentTime -= 50d / bpm;
+                            }
+                        }
+                        // 보내줬찌
+                        if (38.53d <= time && time < 41d)
+                        {
+                            if (currentTime >= 77d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 77d / bpm;
+                            }
+                        }
+
+                        if (41d <= time && time < 42d)
+                        {
+                            if (currentTime >= 77d / bpm)
+                            {
+                                currentTime -= 77d / bpm;
+                            }
+                        }
+
+
+                        // 은지원
+                        // 기가 막혀
+                        if (42d <= time && time < 43.5d)
+                        {
+                            if (currentTime >= 60d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 60d / bpm;
+                            }
+                        }
+
+                        if (43.5d <= time && time < 46d)
+                        {
+                            if (currentTime >= 60d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 60d / bpm;
+                            }
+                        }
+
+                        if (46d <= time && time < 48d)
+                        {
+                            if (currentTime >= 60d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 60d / bpm;
+                            }
+                        }
+
+                        // ---- 두마디
+                        if (48d <= time && time < 51.5d)
+                        {
+                            if (currentTime >= 79d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 79d / bpm;
+                            }
+                        }
+
+                        if (51.5d <= time && time < 52d)
+                        {
+                            if (currentTime >= 79d / bpm)
+                            {
+                                currentTime -= 79d / bpm;
+                            }
+                        }
+
+                        if (52d <= time && time < 54.6d)
+                        {
+                            if (currentTime >= 52d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 52d / bpm;
+                            }
+                        }
+
+                        // 그저 안녕이란
+                        if (54.6d <= time && time < 57.7d)
+                        {
+                            if (currentTime >= 79d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 79d / bpm;
+                            }
+                        }
+
+
+                        if (57.7d <= time && time < 57.9d)
+                        {
+                            if (currentTime >= 50d / bpm)
+                            {
+                                currentTime -= 50d / bpm;
+                            }
+                        }
+                        // 눈물을 삼키며
+                        if (57.9d <= time && time < 60.5d)
+                        {
+                            if (currentTime >= 45d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 45d / bpm;
+                            }
+                        }
+
+                        if (60.5d <= time && time < 60.9d)
+                        {
+                            if (currentTime >= 50d / bpm)
+                            {
+                                currentTime -= 50d / bpm;
+                            }
+                        }
+                        // 돌아섰ㄷ
+                        if (60.9d <= time && time < 63.8d)
+                        {
+                            if (currentTime >= 80d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 80d / bpm;
+                            }
+                        }
+
+                        if (63.8d <= time && time < 66.5d)
+                        {
+                            if (currentTime >= 81d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 81d / bpm;
+                            }
+                        }
+
+                        if (66.5d <= time && time < 66.52d)
+                        {
+                            if (currentTime >= 50d / bpm)
+                            {
+                                currentTime -= 50d / bpm;
+                            }
+                        }
+
+                        if (66.52d <= time && time < 67.5d)
+                        {
+                            if (currentTime >= 43d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 43d / bpm;
+                            }
+                        }
+
+                        // 폼에 살고
+                        if (67.5d <= time && time < 69.3d)
+                        {
+                            if (currentTime >= 60d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 60d / bpm;
+                            }
+                        }
+                        if (69.3d <= time && time < 72d)
+                        {
+                            if (currentTime >= 60d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 60d / bpm;
+                            }
+                        }
+                        if (72d <= time && time < 73.5d)
+                        {
+                            if (currentTime >= 60d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 60d / bpm;
+                            }
+                        }
+
+                        // 이제와 구차하게
+                        if (73.5d <= time && time < 74.0d)
+                        {
+                            if (currentTime >= 80d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 80d / bpm;
+                            }
+                        }
+                        if (74.0d <= time && time < 75d)
+                        {
+                            if (currentTime >= 50d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 50d / bpm;
+                            }
+                        }
+
+                        //맨몸으로 부딪쳤던 내 삶에 그까짓 이별쯤은 괜찮아
+                        if (75.0d <= time && time < 75.3d)
+                        {
+                            if (currentTime >= 40d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 40d / bpm;
+                            }
+                        }
+                        if (75.3d <= time && time < 76d)
+                        {
+                            if (currentTime >= 50d / bpm)
+                            {
+                                currentTime -= 50d / bpm;
+                            }
+                        }
+                        if (76d <= time && time < 76.3d)
+                        {
+                            if (currentTime >= 50d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 50d / bpm;
+                            }
+                        }
+                        if (76.3d <= time && time < 77d)
+                        {
+                            if (currentTime >= 50d / bpm)
+                            {
+                                currentTime -= 50d / bpm;
+                            }
+                        }
+                        if (77d <= time && time < 79d)
+                        {
+                            if (currentTime >= 50d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 50d / bpm;
+                            }
+                        }
+
+                        //이대로 무너지면 절대로 안돼
+                        if (79d <= time && time < 82d)
+                        {
+                            if (currentTime >= 62d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 62d / bpm;
+                            }
+                        }
+
+                        // 마무리 결과창을 위한 출력
+                        if (80d < time)
+                        {
+                            if (currentTime >= 500d / bpm)
+                            {
+                                GameObjectNote();
+                                currentTime -= 500d / bpm;
+                            }
+                        }
+
+
+                    }
+                }
+                break;
             default: break;
         }
     }
