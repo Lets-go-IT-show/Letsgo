@@ -1312,7 +1312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e3ca28b51b1acc43b4a9102b98fdfe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goUI: {fileID: 0}
+  goUI: {fileID: 47463469}
 --- !u!114 &378838471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1325,7 +1325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa0b91fc16ccb9146b335237be2ac4f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goUI: {fileID: 0}
+  goUI: {fileID: 1648786217}
 --- !u!114 &378838472
 MonoBehaviour:
   m_ObjectHideFlags: 0
