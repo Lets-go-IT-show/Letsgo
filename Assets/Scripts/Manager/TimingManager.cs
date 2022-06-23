@@ -98,7 +98,6 @@ public class TimingManager : MonoBehaviour
         theComboManager.ResetCombo();
 
         // timingBoxs의 배열 개수는 5이므로 length를 이용
-        //theEffect.JudgementEffect(timingBoxs.Length);
         MissRecord();
     }
 
