@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
         theTimingManager = FindObjectOfType<TimingManager>();
 
         serial = new SerialPort("COM3", 115200);
-        serial.Open();
+        //serial.Open();
         Debug.Log(serial.IsOpen);
     }
     void Update()
